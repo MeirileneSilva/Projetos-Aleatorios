@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- box icone  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- box icone  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Usuario</title>
+    <link rel="stylesheet" href="Cadastro-form.css">
+    <link rel="shortcut icon" href="img/Coraçao.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <span>
+            <!-- <img src="img/Logo-Hospital-Icone3.png" alt="Logo-img"> -->
+            <a href="ProjetoH.html"><i class='bx bx-arrow-back'></i></a>
+            <h2>Área do Paciente</h2>
+        </span>
+        <ul>
+            <li><a href="#">Identificação</a></li>
+            <li><a href="#">Atendimento</a></li>
+            <li><a href="#">Receituários</a></li>
+            <li><a href="#">Atestados</a></li>
+            <li><a href="#">Descrição Cirúrgica</a></li>
+        </ul>
+    </main>
+    <section class="form-container">
+        <form action="#">
+            <div class="form-img">
+                <img src="img/medico.png" alt="saude">
+            </div>
+            <section class="form-header">
+                <header>
+                    <ul>
+                        <li><a href="Formulario.html" >Login</a></li>
+                        <li><a href="Cadastro-form.html" id="cdt">Cadastro</a></li>
+                    </ul>
+                    <div class="header-local">
+                        <i class='bx bx-location-plus' ></i>
+                        <a href="#">Ceará</a>
+                    </div>
+                </header>
+                <div class="form-content">
+                    <label for="nome">Insira seu nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="nome completo" required><br>
+    
+                    <label for="tel">Insira seu número de CPF</label>
+                    <input type="tel" id="tel" name="tel" placeholder="informe seu email" required><br>
+    
+                    <label for="senha">Crie uma senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="senha" required><br>
+
+                    <label for="confirme">Confirmar sua senha</label>
+                    <input type="password" id="confirme" name="senha" placeholder="senha" required><br>
+    
+                    <button>Cadrastar</button>
+                </div>
+            </section>
+        </form>
+    </section>
+</body>
+</html>
+

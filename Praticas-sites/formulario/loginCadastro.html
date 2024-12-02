@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastre</title>
+    <link rel="stylesheet" href="loginCadastro.css">
+</head>
+<body>
+    <section class="loginCadastro">
+        <div class="form">
+            <form class="register-form" method="POST">
+              <h2 class="title">Cadastre-se</h2>
+              <p class="register">Cadastre-se agora e tenha acesso total ao nosso site.</p>
+              <div class="flex">
+                <label>
+                    <input type="text" required>
+                    <span>Nome</span>
+                </label>
+                <label>
+                    <input type="text" required>
+                    <span>Sobrenome</span>
+                </label>
+              </div>
+              <div class="flex">
+                <label>
+                    <input type="text" required>
+                    <span>Nome</span>
+                </label>
+                <label>
+                    <input type="text" required>
+                    <span>Sobrenome</span>
+                </label>
+              </div>
+              <div class="flex-group">
+                <label>
+                    <input type="" required >
+                    <span>Email</span>
+                </label>
+                <label>
+                    <input type="password" required>
+                    <span>Senha</span>
+                </label>
+                <label>
+                    <input type="password" required>
+                    <span>Confirmar senha</span>
+                </label>
+              </div>
+              <button type="submit">Registrar</button>
+              <p class="message">Já tem uma conta? <a href="#">Entrar</a></p>
+            </form>
+        
+            <form class="login-form" method="post">
+              <h2 class="title">Login</h2>
+              <p class="register">Informe o seu login e tenha acesso total ao nosso site.</p>
+              <div class="flex-group">
+                <label>
+                    <input type="text" required>
+                    <span>Nome completo</span>
+                </label>
+                <label>
+                    <input type="password" required>
+                    <span>Senha</span>
+                </label>
+              </div>
+              <button type="submit">Entrar</button>
+              <p class="message">Ainda não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </form>
+          </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+    </script>
+</body>
+</html>

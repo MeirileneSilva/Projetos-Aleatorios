@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    height: 100px;
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    margin-left: 1rem;
+}
+header ul li a {
+    font-size: 1rem;
+    color: #228b22;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+header ul li a:focus{
+    color: #32cd32;
+}
+.inform-local{
+    display: flex;
+    justify-content: center;
+}
+.inform-local .local-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.inform-local .local-container .local-item{
+    width: 28rem;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem 0.8rem;
+    border: 2px solid #000;
+}
+.inform-local .local-container .local-item i{
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: #ff8c00;
+}
+.inform-local .local-container button{
+    width: 28rem;
+    padding: 14px;
+    text-align: center;
+    border: none;
+    background-color: #228b22;
+    transition: 0.5s;
+}
+.inform-local .local-container button:hover{
+    opacity: 0.8;
+}
+.inform-local .local-container button i{
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+.inform-local .local-container button a{
+    font-size: 1rem;
+    color: #fff;
+}
+.inform-local .local-img img{
+    height: 282px;
+    width: 800px;
+}
+
+/* HORARIOS SECTION  */
+
+.horarios-container .img-header img{
+    height: 300px;
+    width: 100%;
+    opacity: 0.8;
+}
+.horarios-container header{
+    flex-direction: column;
+    margin: 3rem 0;
+}
+.horarios-container header h2{
+    font-size: 1.8rem;
+}
+.horarios-container header p{
+    font-size: 1rem;
+    color: #696969;
+}
+.horarios-container .card-horarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.horarios-container .card-horarios .card-item{
+    flex-direction: column;
+    display: flex;
+    margin: 0 0.8rem 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.horarios-container .card-horarios .card-item img{
+    width: 25rem;
+    height: 10rem;
+}
+.horarios-container .card-horarios .card-item .onibus-card{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 2rem 0 1.2rem;
+    color: #228b22;
+    border-bottom: 2px solid #228b22;
+}
+.horarios-container .card-horarios .card-item ul li{
+    width: 20rem;
+    padding: 5px;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px  solid #aaaa;
+}
+.horarios-container .card-horarios .card-item ul li a{
+    color: #228b22;
+    font-weight: 500;
+}
+.horarios-container .card-horarios .card-item ul li span a{
+    font-weight: 400;
+}
+
+/* PASSAGEM SECTION  */
+.passagem-content header{
+    flex-direction: column;
+}
+.passagem-content header p{
+    color: #696969;
+}
+.card-passagem {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-passagem .passagem-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-passagem .passagem-container .passagem-item{
+    width: 20rem;
+    height: 20rem;
+    padding: 20px;
+    text-align: justify;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-passagem .passagem-container #passagem-item3{
+    border-left: 2px solid #aaaa;
+    border-right: 2px solid #aaaa;
+}
+.card-passagem .passagem-container .passagem-item i{
+    font-size: 2rem;
+    padding: 20px;
+    color: #32cd32;
+    border: 3px solid #32cd32;
+    border-radius: 50%;
+}
+.card-passagem .passagem-container .passagem-item span{
+    font-weight: 600;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.card-passagem .passagem-container .passagem-item p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #696969;
+}
+.card-passagem  .oferecer-item{
+    width: 60rem;
+    padding: 20px 0;
+}
+.card-passagem  .oferecer-item h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 14px 0;
+}
+
+/* CADASTRO CONTAINER  */
+.cadastro form{
+    margin: 5rem 0;
+    padding: 2rem 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #aaaa;
+}
+.cadastro form p{
+    font-size: 1.2rem;
+    color: #696969;
+    margin-bottom: 2rem;
+}
+.cadastro form input{
+    width: 24rem;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    padding: 15px 10px;
+    background: none;
+    border-bottom: 2px solid #696969;
+}
+.cadastro form button{
+    width: 10rem;
+    padding: 0.6rem;
+    color: #fff;
+    margin-top: 1rem;
+    font-weight: 500;
+    background-color: #228b22;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 1rem #808080;
+    transition: 0.6s;
+}
+.cadastro form button:hover{
+    opacity: 0.8;
+    box-shadow: none;
+}
+
+/* FOOTER SECTION  */
+
+.cadastro form p{
+    font-size: 1rem;
+}
+
+.footer footer{
+    padding: 2rem 5%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    background-color: #696969;
+}
+
+.footer footer ul li{
+    margin-bottom: 0.8rem;
+}
+.footer footer ul li a{
+    color: #fff;
+    font-size: 1rem;
+}
+.footer footer ul li a:hover{
+    color: #ffd700;
+    text-decoration: underline;
+}
+.footer footer .redes-icones{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.footer footer .icones-footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.footer footer .icones-footer i{
+    font-size: 2rem;
+    padding: 5px;
+    border: 2px solid #fff;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.footer footer .icones-footer i:hover{
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 2rem #ffd700;
+}
+.footer footer .email-footer {
+    display: flex;
+    align-items: center;
+}
+.footer footer .email-footer i{
+    font-size: 1.4rem;
+    color: #fff;
+    margin-right: 10px;
+}
+.footer footer .email-footer a{
+    color: #fff;
+}

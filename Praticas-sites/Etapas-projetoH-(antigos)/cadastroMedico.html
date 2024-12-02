@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabs Integrations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
+            rel="stylesheet"
+            type='text/css'
+        >
+        <link rel="stylesheet" type="text/css" href="cadastroMedico.css">
+        <script src="dist/purify.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-trending">
+                <div class="container-headline">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                        fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 17l6 -6l4 4l8 -8"></path>
+                        <path d="M14 7l7 0l0 7"></path>
+                    </svg>
+                    Popular Integrations
+                </div>
+                <div class="container-description">
+                    Supercharge your workflow with these integrations
+                </div>
+            </div>
+            <header>
+                <div class="tabs">
+                    <a id="tab1" name="all" href="#tab1">
+                        Cadastre-se
+                    </a>
+                    <a id="tab2" name="developer" href="#tab2">
+                        Faça seu Login
+                    </a>
+                </div>
+            </header>
+            <div class="tab-content-wrapper">
+                <div id="tab1-content" class="tab-content">
+                    <div class="input-group">
+                        <div class="label-group">
+                            <label for="nome">
+                                Nome Completo
+                                <input type="text" placeholder="Informe o seu nome">
+                            </label>
+                            <label for="email">
+                                Email
+                                <input type="text" placeholder="Informe o seu e-mail">
+                            </label>
+                        </div>
+
+                        <div class="label-group">
+                            <label for="telefone">
+                                Telefone
+                                <input type="tel" placeholder="Informe seu telefone">
+                            </label>
+                            <label for="cpf">
+                                CPF
+                                <input type="tel" placeholder="Informe seu CPF">
+                            </label>
+                        </div>
+
+                        <div class="label-group">
+                            <label for="telefone">
+                                Cria uma senha
+                                <input type="password" placeholder="crie uma senha segura">
+                            </label>
+                            <label for="cpf">
+                                Confirme sua senha
+                                <input type="password" placeholder="crie uma senha segura">
+                            </label>
+                        </div>
+
+                        <label for="indentificacao" id="ident-label">
+                            Informe sua Indentificação:
+                            <label for="enfermeiro">
+                                <input type="radio" nome="indentificacao" id="enfermeiro" value="enfermeiro">
+                                Enfermeira(o)
+                            </label>
+                            <label for="medico">
+                                <input type="radio" nome="indentificacao" id="medico" value="medico">
+                                Médica(o)
+                            </label>
+                        </label>
+
+                        <button>Cadastre-se</button>
+                    </div>
+                </div>
+
+                <div id="tab2-content" class="tab-content">
+                    <div class="input-group">
+                        <div class="label-group">
+                            <label for="nome">
+                                Nome Completo, telefone ou cpf
+                                <input type="text" placeholder="Informe o seu nome">
+                            </label>
+                            <label for="telefone">
+                                Insira sua senha
+                                <input type="password" placeholder="Entre com a sua senha">
+                            </label>
+                        </div>
+
+                        <label for="indentificacao" id="ident-label">
+                            Informe sua Indentificação:
+                            <label for="enfermeiro">
+                                <input type="radio" nome="indentificacao" id="enfermeiro" value="enfermeiro">
+                                Enfermeira(o)
+                            </label>
+                            <label for="medico">
+                                <input type="radio" nome="indentificacao" id="medico" value="medico">
+                                Médica(o)
+                            </label>
+                        </label>
+
+                        <button>Cadastre-se</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="cadastroMedico.js"></script>
+    </body>
+</html>

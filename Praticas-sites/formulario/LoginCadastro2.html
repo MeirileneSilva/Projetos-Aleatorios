@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tela de Cadastro do Médico</title>
+    <link rel="stylesheet" href="LoginCadastro2.css">
+</head>
+<body>
+    <section id="form">
+        <div class="form-container">
+            <div id="content-formulario">
+                <ul>
+                    <li><img src="img/Logo-Hospital-Icone3.png" alt="LogoHospital"></li>
+
+                    <li>
+                        <h2>Bem-vindo,</h2>
+                        <span>Seu consultou <br> está a apenas um clique!</span>
+                    </li>
+
+                    <li><p>Informe seus lados ao lado e desfrute da melhor ferramenta de gerenciamento de consultórios.</p></li>
+                </ul>
+                <div id="click-btn">
+                    <input type="checkbox" id="click">
+                    <label for="click">
+                        <i class='bx bx-chevron-right'></i>
+                    </label>
+                </div>
+            </div>
+            <div id="formulario-medico">
+                <form action="#">
+                    <h3>Cadastre-se</h3>
+                    <p>Já tem uma conta? <a href="#">Entre aqui!</a></p>
+                    
+                    <span>Dados pessoais</span>
+                    <div id="nomeSobrenome">
+                        <input type="text" placeholder="Informe o seu nome" required>
+                        <input type="text" placeholder="Informe o seu sobrenome" required>
+                    </div>
+                    <div id="emailTel">
+                        <input type="tel" placeholder="Informe o seu CPF" required>
+                        <input type="text" placeholder="Informe seu telefone" required>
+                    </div>
+                    <div id="senhaCpf">
+                        <input type="email" placeholder="Informe o seu e-mail" required>
+                        <input type="password" placeholder="Crie uma senha segura" required>
+                        <input type="password" placeholder="Confirmar senha" required>
+                    </div>
+                    <span>Dados Profissionais</span>
+                    <div id="conselho">
+                        <div class="dados-sobre">
+                            <div id="sigla">
+                                <label for="sigla">Sigla do Conselho</label>
+                                <input type="text" placeholder="Digite a sigla" id="sigla">
+                            </div>
+                            <div id="numConselho">
+                                <label for="tel">Número do Conselho</label>
+                                <input type="text" placeholder="Informe o seu número do Conselho">
+                            </div>    
+                        </div>
+                
+                        <label for="tel">Uf</label>
+                        <input type="text" placeholder="Informe nome do seu estado">
+
+                        <label for="tel">Especialidade</label>
+                        <input type="text" placeholder="Informe sua especialidade">
+                    </div>
+
+                    <button>Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

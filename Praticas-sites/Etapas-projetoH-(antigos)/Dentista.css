@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(205, 205, 205);
+}
+.odonto{
+    position: sticky;
+    height: 3rem;
+    padding: 18px;
+    background-color: #fff;
+    box-shadow: 0 0 3px #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inicio{
+    display: flex;
+    align-items: center;
+}
+.inicio a{
+    display: flex;
+    align-items: center;
+}
+.inicio span{
+    font-size: 1.08rem;
+    color: #808080;
+}
+.odonto .inicio span:hover{
+    color: #32CD32;
+}
+.inicio i{
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #808080;
+}
+
+.container-titulo{
+    margin: 0 20px;
+}
+.container-titulo p{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.odonto .input-container {
+    height: 2rem;
+    width: 18rem;
+    padding: 5px 10px;
+    box-shadow: 0 2px 3px #aaa;
+    border-radius: 10px 10px 10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid #aaa;
+}
+.odonto .input-container input{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    caret-color: #32CD32;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.2s ease-in;
+}
+.input-container:hover{
+    border: 1px solid  #32cd32c9;
+    outline: 2px solid  #32CD32;
+}
+.input-container i{
+    color: #aaa;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+
+.odonto-item{
+    height: 2.5rem;
+    padding: 18px;
+    margin: 5px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #aaa;
+    background-color: #fff;
+}
+.odonto-item p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.odonto-item i{
+    font-size: 18px;
+    color:  #228B22;
+    cursor: pointer;
+}
+.odonto-item a{
+    color: #32CD32;
+}
+@media (max-width:500px){
+    body{
+        background: none;
+    }
+    .odonto{
+        height: 10rem;
+        padding: 0;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .odonto .inicio{
+        min-width: 96%;
+        padding: 8px;
+        border-bottom: 2px solid #aaa;
+    }
+    .inicio a i{
+        font-size: 1.8rem;
+    }
+    .inicio a span{
+        display: none;
+    }
+    .container-titulo{
+        margin: 0 8px;
+    }
+    .odonto .input-container{
+        width: 90%;
+        border-radius: 10px 10px 0 0;
+        padding: 12px;
+        margin: 5px 8px;
+    }
+    .odonto .input-container i{
+        font-size: 19px;
+    }
+    .odonto .input-container input{
+        width: 100%;
+    }
+    .odonto .input-container::placeholder{
+        font-size: 20px;
+    }
+    .odonto-itens .odonto-item{
+        height: 80px;
+        align-items:flex-start;
+        flex-direction: column;
+    }
+    .odonto-itens .odonto-item p{
+        font-size: 20px;
+        width: 100%;
+        color: #228B22;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #aaaaaa70;
+    }
+    .odonto-itens .odonto-item a{
+        font-size: 20px;
+        color: #808080;
+    }
+    .odonto-itens .odonto-item i{
+        display: none;
+    }
+}

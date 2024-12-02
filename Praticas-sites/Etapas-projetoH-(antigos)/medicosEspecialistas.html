@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- box icones  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- box icones  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicos e Especialistas</title>
+    <link rel="stylesheet" href="medicosEspecialistas.css">
+</head>
+<body>
+
+    <header>
+        <span>
+            <!-- <img src="img/Logo-Hospital-Icone3.png" alt="Logo-img"> -->
+            <a href="ProjetoH.html"><i class='bx bx-arrow-back'></i></a>
+            <h2>Médicos e especialistas</h2>
+        </span>
+        <ul class="open">
+            <li><a href="#">Identificação</a></li>
+            <li><a href="#">Atendimento</a></li>
+            <li><a href="#">Receituários</a></li>
+            <li><a href="#">Atestados</a></li>
+            <li><a href="#">Descrição Cirúrgica</a></li>
+            <div id="close-icone" onclick="closeIcone()" >
+                <i class='bx bx-x-circle'></i>
+            </div>
+        </ul>
+        <div id="menu-icone" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+    <script>
+        let ul = document.querySelector('header ul');
+        function openMenu(){
+            ul.classList.add('open');
+        }
+        function closeIcone(){
+            ul.classList.remove('open');
+        }
+    </script>
+
+    <section class="container-medico">
+        <div class="container">
+            <div class="title-header">
+                <h3>Tenha acesso a um profissional de saúde a qualquer momento</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, impedit.</p>
+                <button class="btn">Tenha um atendimento de qualidade</button>
+            </div>
+            <div class="container-img">
+                <img src="img/medica.png" alt="Medica">
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="sobre">
+            <h3 class="person" >Bem-vindo ao nosso hospital</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, unde. Voluptatem quisquam mollitia aperiam fuga error labore! Perferendis repudiandae quaerat, consequuntur porro minus quas enim necessitatibus adipisci nostrum illum nemo maiores nisi laudantium quia error nesciunt ut et voluptates aspernatur?</p>
+
+            <button class="btn">Sobre o hospital</button>
+        </div>
+    </section>
+
+    <section class="container-card">
+        <div class="card-itens">
+            <div id="card-item">
+                <img src="img/M.E.jpeg" alt="img1">
+            </div>
+            <div id="card-item" class="item">
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eligendi in repudiandae corrupti ex soluta magni a cumque dignissimos ut. Animi quasi ipsum voluptatem.</span>
+
+                <button class="btn">Sobre o hospital</button>
+            </div>
+            <div id="card-item">
+                <img src="img/M.E2.jpeg" alt="img1">
+            </div>
+        </div>
+    </section>
+
+    <section id="container-especialistas">
+        <h3 class="person" >Nossos Serviços</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint veritatis modi placeat? Totam officiis consequuntur eos non corrupti.</p>
+        <div class="especialistas-content">
+            <div class="item-especialidades">
+                <ul>
+                    <span>Ecocardiograma</span>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni magnam perspiciatis natus, earum soluta deserunt. Ipsum sit ullam inventore provident accusamus eius nesciunt pariatur.</li>
+                </ul>
+                <ul>
+                    <span>Serviços Pediátricos</span>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni magnam perspiciatis natus, earum soluta deserunt. Ipsum sit ullam inventore provident accusamus eius nesciunt pariatur.</li>
+                </ul>
+                <ul>
+                    <span>Saúde Feminina</span>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni magnam perspiciatis natus, earum soluta deserunt. Ipsum sit ullam inventore provident accusamus eius nesciunt pariatur.</li>
+                </ul>
+            </div>
+            <div class="item-especialidade">
+                <img src="img/medicos-dupla.png" alt="medicos">
+            </div>
+            <div class="item-especialidades">
+                <ul>
+                    <span>Dermatologia</span>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni magnam perspiciatis natus, earum soluta deserunt. Ipsum sit ullam inventore provident accusamus eius nesciunt pariatur.</li>
+                </ul>
+                <ul>
+                    <span>Testando em Laboratório ou Teste Experimental</span>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni magnam perspiciatis natus, earum soluta deserunt. Ipsum sit ullam inventore provident accusamus eius nesciunt pariatur.</li>
+                </ul>
+                <ul>
+                    <span>Tomografias Computadorizadas</span>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni magnam perspiciatis natus, earum soluta deserunt. Ipsum sit ullam inventore provident accusamus eius nesciunt pariatur.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipe-container">
+        <h3 class="person" >Nossos médicos e enfermeiros</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius, id corrupti veritatis incidunt non hic.</p>
+        
+        <div class="equipe-card">
+            <div class="equipe-item">
+                <span>Cirurgião de implante</span>
+                <img src="img/medic-img.jpeg" alt="medico">
+                <h5>Dra.Sandra Taillor</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptas non alias quibusdam vitae praesentium.</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+                </ul>
+            </div>
+            <div class="equipe-item">
+                <span>Cirurgião de implante</span>
+                <img src="img/medic-img.jpeg" alt="medico">
+                <h5>Dra.Sandra Taillor</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptas non alias quibusdam vitae praesentium.</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+                </ul>
+            </div>
+            <div class="equipe-item">
+                <span>Cirurgião de implante</span>
+                <img src="img/medic-img.jpeg" alt="medico">
+                <h5>Dra.Sandra Taillor</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptas non alias quibusdam vitae praesentium.</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+                </ul>
+            </div>
+            <div class="equipe-item">
+                <span>Cirurgião de implante</span>
+                <img src="img/medic-img.jpeg" alt="medico">
+                <h5>Dra.Sandra Taillor</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptas non alias quibusdam vitae praesentium.</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+                </ul>
+            </div>
+            <div class="equipe-item">
+                <span>Cirurgião de implante</span>
+                <img src="img/medic-img.jpeg" alt="medico">
+                <h5>Dra.Sandra Taillor</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptas non alias quibusdam vitae praesentium.</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+                </ul>
+            </div>
+            <div class="equipe-item">
+                <span>Cirurgião de implante</span>
+                <img src="img/medic-img.jpeg" alt="medico">
+                <h5>Dra.Sandra Taillor</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptas non alias quibusdam vitae praesentium.</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Resultado dos Exames</a></li>
+                        <li><a href="#">Agendar retorno</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Dúvidas Frequentes</a></li>
+                        <li><a href="#">Ouvitoria</a></li>
+                    </ul>
+                </div>
+                <!-- fim do primeiro footer-col -->
+
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Institucional</a></li>
+                        <li><a href="#">código de Ética e Conduta Socioambiental</a></li>
+                        <li><a href="#">trabalhe Conosco</a></li>
+                        <li><a href="#">termos de uso do site</a></li>
+                        <li><a href="#">política de Privacidade</a></li>
+                        <li><a href="#">preferência de Cookies</a></li>
+                    </ul>
+                </div>
+                <!-- fim do segundo footer-col -->
+                
+                <div class="footer-col">
+                    <div class="central">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <strong>Central de Atendimento</strong>
+                        <p><a href="Telefone.html">Número</a></p>
+
+                        <!-- fim da central footer-col -->
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <strong>Atendimento pelo WhatsApp</strong>
+                        <p><a href="Telefone.html">Número</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga nossas Redes</h4>
+                    <div class="medias-sociais">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- fim do primeiro footer-col -->
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

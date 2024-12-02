@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font-awesome-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Agendar Consulta</title>
+    <link rel="shortcut icon" href="img/Coraçao.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Consulta.css">
+</head>
+<body>
+    <header class="header-titulo">
+        <nav class="header-inicio">
+            <aside class="box-menu">
+                <input type="checkbox" id="check">
+                <div class="menu-icone">
+                    <label for="check">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div>
+                <div class="sidebar-menu">
+                    <div class="btn-close">
+                        <label for="check">
+                            <i class="fa-solid fa-xmark" class="btn-close"></i>
+                        </label>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <div class="fixo"><a href="Consulta.html">Marcar Consulta</a></div>
+                            <li><a href="areaPaciente.html">Área do Paciente</a></li>
+                            <li><a href="especialidades.html">Especialidades</a></li>
+                            <li><a href="#">Nossas Clinicas</a></li>
+                            <li><a href="agendaExames.html">Exames</a></li>
+                            <li><a href="Odontologia.html">Odonto</a></li>
+                            <!-- <li><a href="pacotesConsulta.html">Pacotes de Consultas</a></li> -->
+                            <li><a href="medicosEspecialistas.html">Médicos e Especialistas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+        </nav>
+
+        <div class="logo">
+            <img src="img/Logo-Hospital-Icone3.png" alt="logo-icone">
+        </div>
+        <div class="localidade-icone">
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="#">Ceará</a>
+        </div>
+    </header>
+
+    <!--Navegaçao-->
+    <div class="container">
+        <nav class="titulo">
+            <a href="ProjetoH.html"><i class='bx bx-left-arrow-alt'></i></i></a>
+            <strong>Agendar Consulta</strong>
+            <p>Escolha a especialidade ou o médico desejado.</p>
+        </nav>
+        <div class="icones-container">
+            <div class="icones-itens">
+                <div class="icones">
+                    <i class="fa-regular fa-hospital"></i>
+                    <a href="#">Consulta Presencial</i></a>
+                </div>
+                <div class="icones">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <a href="#">Agendar os Médicos</a>
+                </div>
+                <div class="icones">
+                    <i class="fa-solid fa-laptop-medical"></i>
+                    <a href="#">Consulta Online</a>
+                </div>
+                <div class="icones">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <a href="#">Pronto Atendimento</a>
+                </div>
+                <div class="icones">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <a href="#">Agendar Retorno</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Carrosel das imagens-->
+    <div class="content">
+        <div class="slides">
+
+            <input class="input" type="radio" name="slide" id="slide1" checked>
+            <input class="input" type="radio" name="slide" id="slide2">
+            <input class="input" type="radio" name="slide" id="slide3">
+
+
+            <div class="slide s1">
+                <a href="CadastroH.html"><img src="img/img-carrossel01.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href="CadastroH.html"><img src="img/img-carrossel02.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href="CadastroH.html"><img src="img/img-carrossel03.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navigation">
+
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+
+    </div>
+
+    <script>
+        let contador = 1;
+        setInterval(function(){
+            document.getElementById('slide' + contador).checked = true;
+            contador ++;
+
+            if( contador > 3){
+                contador = 1;
+            }
+        }, 2000);
+        
+    </script>
+    <!-- fim do carrossel de imagens -->
+
+    <!--Localidade-->
+    <section class="content-card">
+        <div class="card-content">
+            <div class="card-title">
+                <h2>Unidades de <span>Saúde em Massapê, Ceará</span> </h2>
+            </div>
+            <div class="card-content-item">
+                <div class="card-group">
+                    <img src="img/vazio - Copia.jpg" alt="">
+                    <span>nomeLocalidade</span>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot" id="icone-card"></i>
+                            <a href="#">Endereço</a><br>
+                            <span>descriçao</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock" id="icone-card"></i>
+                            <a href="#">Horário de Funcionamento</a><br>
+                            <span>descriçao</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <a href="#">Telefone:</a>
+                            <span>descriçao</span>
+                        </li>
+                    </ul>
+                    <button>Ver agendas disponíveis</button>
+                </div>
+                <div class="card-group">
+                    <img src="img/vazio - Copia.jpg" alt="">
+                    <span>nomeLocalidade</span>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot" id="icone-card"></i>
+                            <a href="#">Endereço</a><br>
+                            <span>descriçao</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock" id="icone-card"></i>
+                            <a href="#">Horário de Funcionamento</a><br>
+                            <span>descriçao</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <a href="#">Telefone:</a>
+                            <span>descriçao</span>
+                        </li>
+                    </ul>
+                    <button>Ver agendas disponíveis</button>
+                </div>
+                <div class="card-group">
+                    <img src="img/vazio - Copia.jpg" alt="">
+                    <span>nomeLocalidade</span>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot" id="icone-card"></i>
+                            <a href="#">Endereço</a><br>
+                            <span>descriçao</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock" id="icone-card"></i>
+                            <a href="#">Horário de Funcionamento</a><br>
+                            <span>descriçao</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <a href="#">Telefone:</a>
+                            <span>descriçao</span>
+                        </li>
+                    </ul>
+                    <button>Ver agendas disponíveis</button>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!--Depoimentos-->
+    <section class="medicos-avaliados">
+        <div class="medicos-ce">
+            <h1>Médicos de <span>Hospitais e Postos de Saúde em Massapê, Ceará</span></h1>
+            <p>Conheça os profissionais que lhes atendem.</p>
+        </div>
+        <div class="depoimentos">
+             <!--Aval.1-->
+            <div class="profisional-itens">
+                <div class="medico-user">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="medico-aval">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Nome do profissional</h4>
+                    <p>Especialista em...</p>
+                </div>
+            </div>
+    
+             <!--Aval.2-->
+             <div class="profisional-itens">
+                <div class="medico-user">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="medico-aval">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Nome do profissional</h4>
+                    <p>Especialista em...</p>
+                </div>
+            </div>
+            <!--Aval.3-->
+            <div class="profisional-itens">
+                <div class="medico-user">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="medico-aval">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Nome do profissional</h4>
+                    <p>Especialista em...</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="button-btn">
+            <button>Conheça nossos Médicos e Especialistas</button>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="comentarios">
+        <aside class="comentario-titulo">
+            <main class="depoimento">
+                <h4>Depoimentos sobre <span>Hospitais e Postos de Saúde</span></h4>
+            </main>
+        </aside>
+        <aside class="depoimentos-itens">
+            <main class="depoimentos-avaliacao">
+                <div class="rating">
+                    <input type="radio" id="star1" name="rate" value="1">
+                    <label for="star1" title="text"></label>
+            
+                    <input type="radio" id="star2" name="rate" value="2">
+                    <label for="star2" title="text"></label>
+            
+                    <input  type="radio" id="star3" name="rate" value="3">
+                    <label for="star3" title="text"></label>
+            
+                    <input checked="" type="radio" id="star4" name="rate" value="4">
+                    <label for="star4" title="text"></label>
+                    
+                    <input type="radio" id="star5" name="rate" value="5">
+                    <label for="star5" title="text"></label>
+                </div>
+                <div class="star-comentario">
+                    <p>Nome do Usuário</p>
+                    <a href="#">Comentario</a>
+                </div>
+            </main>
+
+            <!-- COMENTARIO 2 -->
+            <main class="depoimentos-avaliacao">
+                <div class="rating">
+                    <input type="radio" id="star6" name="rate" value="6">
+                    <label for="star6" title="text"></label>
+            
+                    <input type="radio" id="star7" name="rate" value="7">
+                    <label for="star7" title="text"></label>
+            
+                    <input  type="radio" id="star8" name="rate" value="8">
+                    <label for="star8" title="text"></label>
+            
+                    <input checked="" type="radio" id="star9" name="rate" value="9">
+                    <label for="star2" title="text"></label>
+                    
+                    <input type="radio" id="star10" name="rate" value="10">
+                    <label for="star10" title="text"></label>
+                </div>
+                <div class="star-comentario">
+                    <p>Nome do Usuário</p>
+                    <a href="#">Comentario</a>
+                </div>
+            </main>
+
+            <!-- COMENTARIO 3 -->
+            <main class="depoimentos-avaliacao">
+                <div class="rating">
+                    <input type="radio" id="star11" name="rate" value="11">
+                    <label for="star11" title="text"></label>
+            
+                    <input type="radio" id="star12" name="rate" value="12">
+                    <label for="star12" title="text"></label>
+            
+                    <input  type="radio" id="star13" name="rate" value="13">
+                    <label for="star13" title="text"></label>
+            
+                    <input checked="" type="radio" id="star14" name="rate" value="14">
+                    <label for="star14" title="text"></label>
+                    
+                    <input type="radio" id="star15" name="rate" value="15">
+                    <label for="star15" title="text"></label>
+                </div>
+                <div class="star-comentario">
+                    <p>Nome do Usuário</p>
+                    <a href="#">Comentario</a>
+                </div>
+            </main>
+        </aside>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Resultado dos Exames</a></li>
+                        <li><a href="#">Agendar retorno</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Dúvidas Frequentes</a></li>
+                        <li><a href="#">Ouvitoria</a></li>
+                    </ul>
+                </div>
+                <!-- fim do primeiro footer-col -->
+
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Institucional</a></li>
+                        <li><a href="#">código de Ética e Conduta Socioambiental</a></li>
+                        <li><a href="#">trabalhe Conosco</a></li>
+                        <li><a href="#">termos de uso do site</a></li>
+                        <li><a href="#">política de Privacidade</a></li>
+                        <li><a href="#">preferência de Cookies</a></li>
+                    </ul>
+                </div>
+                <!-- fim do segundo footer-col -->
+                
+                <div class="footer-col">
+                    <div class="central">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <strong>Central de Atendimento</strong>
+                        <p><a href="Telefone.html">Número</a></p>
+
+                        <!-- fim da central footer-col -->
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <strong>Atendimento pelo WhatsApp</strong>
+                        <p><a href="Telefone.html">Número</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga nossas Redes</h4>
+                    <div class="medias-sociais">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- fim do primeiro footer-col -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

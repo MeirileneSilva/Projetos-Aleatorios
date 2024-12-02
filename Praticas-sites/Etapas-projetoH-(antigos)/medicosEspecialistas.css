@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+header{
+    height: 6rem;
+    margin-bottom: 4rem;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff ;
+}
+header span{
+    display: flex;
+    align-items: center;
+}
+header span i{
+    font-size: 1.4rem;
+    color: #00008B;
+    margin-right: 1rem;
+}
+header img{
+    height: 230px;
+}
+header h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #0071a5;
+    /* font-weight: 500; */
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    margin-left: 20px;
+}
+header ul li a {
+    font-size: 1.4rem;
+    color: #0071a5;
+    transition: 0.2s;
+    display: block;
+}
+header ul li a::after{
+    content: " ";
+    background-color: #0071a5;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.7s;
+}
+header ul li a:hover::after{
+    width: 100%;
+    margin: auto;
+}
+header #menu-icone{
+    display: none;
+}
+header #menu-icone i{
+    color: #333333;
+    cursor: pointer;
+    font-size: 3rem;
+}
+header #close-icone{
+    display: none;
+}
+header #close-icone i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+@media (min-width: 1740px){
+    header{
+        min-width: 1400px;
+    }
+    .container-medico{
+        margin: auto;
+        min-width: 1400px;
+    }
+    .container{
+        min-width: 1400px;
+    }
+    #content {
+        min-width: 1280px;
+        margin: 5rem auto;
+    }
+    #content .sobre p{
+        max-width: 1400px;
+        margin: 2rem auto;
+    }
+    .container-card{
+        max-width: 1900px;
+        margin: auto;
+    }
+    .container-card .card-itens #card-item img{
+        max-width: 624px;
+    }
+    .container-card  .item{
+        min-width: 250px;
+    }
+    #container-especialistas{
+        min-width: 1400px;
+    }
+    #container-especialistas .especialistas-content{
+        min-width: 1400px;
+    }
+
+    .equipe-container{
+        margin: 6rem 0;
+        min-width: 1400px;
+    }
+
+    .equipe-container .equipe-card{
+        max-width: 1690px;
+        margin: auto;
+    }
+    footer{
+        min-width: 1400px;
+    }
+    footer{
+        min-width: 1400px;
+    }
+}
+@media (max-width: 1740px){
+    header{
+        min-width: 1280px;
+    }
+    header ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 100%;
+        padding: 20px;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #0071a5;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    header ul.open{
+        clip-path: circle(141.2% at 100% 0);
+    }
+    header .open li a{
+        margin: 10px 0;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    header #menu-icone{
+        display: block;
+    }
+    header #close-icone{
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 1rem;
+    }
+    .container-medico{
+        margin: auto;
+        min-width: 1280px;
+    }
+    .container{
+        max-width: 1280px;
+    }
+    #content {
+        min-width: 1280px;
+        margin: 5rem auto;
+    }
+    #content .sobre p{
+        max-width: 700px;
+        margin: 2rem auto;
+    }
+    .container-card{
+        min-width: 1280px;
+    }
+    .container-card  .card-itens{
+        min-width: 1200px;
+    }
+    .container-card .card-itens #card-item img{
+        max-width: 400px;
+    }
+    .container-card  .item{
+        min-width: 300px;
+    }
+    #container-especialistas{
+        min-width: 1280px;
+    }
+    #container-especialistas .especialistas-content{
+        min-width: 1280px;
+    }
+    .especialistas-content .item-especialidades ul{
+        margin: 0 ;
+    }
+    .equipe-container{
+        margin: 6rem 0;
+        min-width: 1280px;
+    }
+
+    .equipe-container .equipe-card{
+        max-width: 1280px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    footer{
+        min-width: 1280px;
+    }
+}
+@media (max-width: 780px){
+    header{
+        min-width: 800px;
+    }
+    header h2{
+        font-size: 1.4rem;
+    }
+    header #menu-icone i, header #close-icone i{
+        font-size: 2.5rem;
+    }
+    header ul li a{
+        font-size: 1rem;
+        color: #fff;
+    }
+    .container-medico{
+        min-width: 800px;
+    }
+    .container{
+        min-width: 740px;
+        flex-direction: column;
+    }
+    .container-img img{
+        position: relative;
+        left: 240px;
+    }
+    #content{
+        min-width: 800px;
+    }
+    #content .sobre{
+        min-width: 800px;
+        margin: 5rem auto;
+    }
+    #content .sobre p{
+        min-width: 600px;
+        margin: 2rem auto;
+    }
+    .container-card{
+        min-width: 800px;
+    }
+    .container-card  .card-itens{
+        min-width: 800px;
+        flex-direction: column;
+    }
+    .container-card .card-itens #card-item img{
+        min-width: 800px;
+        min-height: 600px;
+        margin: -8px auto;
+    }
+    .container-card  .item{
+        min-height: 600px;
+        min-width: 800px;
+    }
+    #container-especialistas{
+        min-width: 800px;
+        margin: 8rem auto;
+    }
+    #container-especialistas p{
+        max-width: 600px;
+    }
+    .especialistas-content .item-especialidades{
+        margin: 3rem 0;
+    }
+    #container-especialistas .especialistas-content{
+        min-width: 800px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .especialistas-content .item-especialidades ul{
+        margin: 0 5rem 3rem;
+    }
+    .equipe-container{
+        min-width: 800px;
+    }
+
+    .equipe-container > p{
+        max-width: 600px;
+    }
+    .equipe-container .equipe-card{
+        max-width: 800px;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    footer{
+        min-width: 800px;
+    }
+}
+
+.container-medico{
+    padding: 5% 5% 0;
+    margin-top: -4rem;
+    background-color: #007aa3;
+}
+.container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.container .title-header{
+    width: 40rem;
+}
+h3{
+    font-size: 2.4rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+.container .title-header p{
+    color: #d0d0d0;
+    font-size: 1.2rem;
+    margin: 3rem 0;
+}
+.btn{
+    width: 24rem;
+    padding: 18px;
+    font-size: 1.08rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: #333333;
+    font-weight: 500;
+    border: 2.5px solid #fff;
+    background-color: #00bfff;
+    box-shadow: 0 0 1rem #00bfff;
+    transition: .4s ease-in;
+}
+.btn:hover{
+    background-color: #0071a5;
+    box-shadow: none;
+    color: #fff;
+    border: 2.5px solid #fff;
+}
+#content{
+    padding: 5% 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre{
+    width: 50rem;
+    text-align: center;
+}
+.person{
+    text-align: center;
+    color: #333333;
+    display: block;
+}
+.person::after{
+    height: 4px;
+    width: 8rem;
+    margin: auto;
+    display: block;
+    content: "";
+    margin-top: 6px;
+    border-radius: 5px;
+    background-color: #0071a5;
+}
+#content p{
+    font-size: 1.2rem;
+    color: #333333;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+.container-card{
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-itens{
+    display: flex;
+}
+
+.card-itens #card-item img{
+    height: 450px;
+    width: 683px;
+}
+.card-itens .item{
+    height: 450px;
+    width: 600px;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007aa3;
+}
+.card-itens .item i{
+    font-size: 3rem;
+    color: #fff;
+}
+.card-itens .item span{
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 3rem 0;
+}
+#container-especialistas p{
+    width: 50rem;
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+.especialistas-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-especialidades ul{
+    width: 24rem;
+    text-align: right;
+    margin: 0 5rem 4rem;
+}
+.item-especialidades ul span{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.item-especialidades ul li{
+    margin-top: 1rem;
+    color: #333333;
+}
+.equipe-container{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipe-container > p{
+    width: 50rem;
+    font-size: 1.2rem;
+    color: #333333;
+    font-weight: 500;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+.equipe-card {
+    width: 120rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.equipe-card .equipe-item{
+    width: 32rem;
+    height: 40rem;
+    border-radius: 1rem;
+    padding: 18px;
+    margin: 1rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 3px solid #00bfff94;
+    box-shadow: 0 0 0.8rem #00bfff94;
+}
+.equipe-card .equipe-item span{
+    font-size: 1rem;
+    color: #808080;
+}
+.equipe-card .equipe-item img{
+    height: 300px;
+    margin: 1.3rem 0;
+}
+.equipe-card .equipe-item h5{
+    font-size: 1.5rem;
+}
+.equipe-card .equipe-item p{
+    color: #333333;
+    text-align: center;
+    margin: 1rem 0;
+}
+.equipe-card .equipe-item ul{
+    display: flex;
+    align-items: center;
+}
+.equipe-card .equipe-item ul li{
+    margin: 0 10px;
+}
+.equipe-card .equipe-item ul li a{
+    padding: 6px;
+    text-align: center;
+    font-size: 2rem;
+    color: #007aa3;
+    border-radius: 50%;
+    border: 2px solid #007aa3;
+    transition: 0.2s ease-in;
+}
+.equipe-card .equipe-item ul li a:hover{
+    color: #00bfff;
+    border: 2px solid #00bfff;
+}
+.equipe-card .equipe-item ul li i{
+    height: 3rem;
+    padding: 7px;
+}
+
+
+
+/* Rodapé */
+
+
+footer{
+    background-color: #0071a5;
+    margin-top: 80px;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 3%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col {
+    width: 24%;
+    padding: 0 5px;
+}
+.footer-col h4{
+    width: 10rem;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffffffc3;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a,.footer-col a{
+    font-size: 18px;
+    margin: 14px 0;
+    text-transform: capitalize; /* Para que a primeira letra fique maiuscula :)*/
+    color: #fff;
+    font-weight: 300px;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover, .footer-col .central a:hover{
+    padding-left: 10px;
+}
+.central{
+    display: inline-block;
+}
+.footer-col .central i{
+    font-size: 20px;
+    color: #fff;
+}
+.footer-col .central strong{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.footer-col .medias-sociais{
+    margin-top: 10px;
+
+}
+.footer-col .medias-sociais a{
+    display: inline-flex;
+    height: 45px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    color: #cecdcd;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-sociais a:hover{
+    color: #0c6ac8;
+    background-color: #fff;
+}
+@media (max-width: 900px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 600px){
+    .footer-col{
+        max-width: 1400px;
+    }
+}

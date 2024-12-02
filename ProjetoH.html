@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto H</title>
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font-awesome-->
+    <!-- font awesome w3schools -->
+    <link rel="shortcut icon" href="img/Coraçao.png" type="image/x-icon">
+    <link rel="stylesheet" href="ProjetoH.css">
+</head>
+<body>
+
+    <header class="header-titulo">
+        <nav class="header-inicio">
+            <aside class="box-menu">
+                <input type="checkbox" id="check">
+                <div class="menu-icone">
+                    <label for="check">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div>
+                <div class="sidebar-menu">
+                    <div class="btn-close">
+                        <label for="check">
+                            <i class="fa-solid fa-xmark" class="btn-close"></i>
+                        </label>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <div class="fixo"><a href="Consulta.html">Marcar Consulta</a></div>
+                            <li><a href="areaPaciente.html">Área do Paciente</a></li>
+                            <li><a href="especialidades.html">Especialidades</a></li>
+                            <li><a href="#">Nossas Clinicas</a></li>
+                            <li><a href="agendaExames.html">Exames</a></li>
+                            <li><a href="Odontologia.html">Odonto</a></li>
+                            <li><a href="medicosEspecialistas.html">Médicos e Especialistas</a></li>
+                            <!-- <li><a href="loginPaciente.html">Cadastro do Paciente</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+        </nav>
+
+        <div class="logo">
+            <img src="img/Logo-Hospital-Icone3.png" alt="logo-icone">
+        </div>
+        <div class="localidade-icone">
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="#">Ceará</a>
+        </div>
+    </header>
+
+    <!--Navegaçao-->
+    <div class="container">
+        <nav class="titulo">
+            <h1>Marque seu atendimento</h1>
+            <p>Médicos, Dentistas e Exames para cuidar da sua saúde.</p>
+        </nav>
+        <div class="icones-container">
+            <div class="icones-itens">
+                <div class="icones">
+                    <i class="fa-solid fa-plus"></i>
+                    <a href="Consulta.html">Agendar Consulta</a>
+                </div>
+                <div class="icones">
+                    <i class="fa-solid fa-tooth"></i>
+                    <a href="Dentista.html">Agendar Dentista</a>
+                </div>
+                <div class="icones">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <a href="Exames.html">Exames</a>
+                </div>
+                <div class="icones">
+                    <img src="img/Coraçao.png" alt="">
+                    <a href="Descontos.html">Desconto em consultas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Carrosel das imagens-->
+    <div class="content">
+        <div class="slides">
+
+            <input class="input" type="radio" name="slide" id="slide1" checked>
+            <input class="input" type="radio" name="slide" id="slide2">
+            <input class="input" type="radio" name="slide" id="slide3">
+
+
+            <div class="slide s1">
+                <a href="CadastroH.html"><img src="img/vazio - Copia.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href="CadastroH.html"><img src="img/vazio - Copia.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href="CadastroH.html"><img src="img/vazio - Copia.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navigation">
+
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+
+    </div>
+
+    <script>
+        let contador = 1;
+        setInterval(function(){
+            document.getElementById('slide' + contador).checked = true;
+            contador ++;
+
+            if( contador > 3){
+                contador = 1;
+            }
+        }, 2000);
+        
+    </script>
+    <!-- fim do carrossel de imagens -->
+
+    <!--Localidade-->
+    <section class="content-card">
+        <div class="card-content">
+            <div class="card-title">
+                <h2>Unidades de <span>Saúde em Massapê, Ceará</span> </h2>
+            </div>
+            <div class="card-content-item">
+
+                <div class="card-group">
+                    <img src="img/vazio - Copia.jpg" alt="">
+                    <span>Hospital Senador Ozires Pontes</span>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot" id="icone-card"></i>
+                            <a href="#">Endereço</a><br>
+                            <!-- <span>Rua do Cruzeiro, S/N - COHAB - Massapê</span> -->
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock" id="icone-card"></i>
+                            <a href="#">Horário de Funcionamento</a><br>
+                            <!-- <span>De segunda a segunda 07:00 às 00:00</span> -->
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <a href="#">Informações de contatos:</a><br>
+                            <!-- <span>Celular: (88) 99303-1774</span><br> -->
+                            <!-- <span>Email: hospitalmassap2019@gmail.com</span> -->
+                        </li>
+                    </ul>
+                    <button>Ver agendas disponíveis</button>
+                </div>
+                
+                <div class="card-group">
+                    <img src="img/vazio - Copia.jpg" alt="">
+                    <span>Hospital Senador Ozires Pontes</span>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot" id="icone-card"></i>
+                            <a href="#">Endereço</a><br>
+                            <!-- <span>Rua do Cruzeiro, S/N - COHAB - Massapê</span> -->
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock" id="icone-card"></i>
+                            <a href="#">Horário de Funcionamento</a><br>
+                            <!-- <span>De segunda a segunda 07:00 às 00:00</span> -->
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <a href="#">Informações de contatos:</a><br>
+                            <!-- <span>Celular: (88) 99303-1774</span><br> -->
+                            <!-- <span>Email: hospitalmassap2019@gmail.com</span> -->
+                        </li>
+                    </ul>
+                    <button>Ver agendas disponíveis</button>
+                </div>
+
+                <div class="card-group">
+                    <img src="img/vazio - Copia.jpg" alt="">
+                    <span>Hospital Senador Ozires Pontes</span>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot" id="icone-card"></i>
+                            <a href="#">Endereço</a><br>
+                            <!-- <span>Rua do Cruzeiro, S/N - COHAB - Massapê</span> -->
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock" id="icone-card"></i>
+                            <a href="#">Horário de Funcionamento</a><br>
+                            <!-- <span>De segunda a segunda 07:00 às 00:00</span> -->
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <a href="#">Informações de contatos:</a><br>
+                            <!-- <span>Celular: (88) 99303-1774</span><br> -->
+                            <!-- <span>Email: hospitalmassap2019@gmail.com</span> -->
+                        </li>
+                    </ul>
+                    <button>Ver agendas disponíveis</button>
+                </div>
+        </div>
+    </section>
+  
+    <!--Médicos Avaliados-->
+    <section class="medicos-avaliados">
+        <div class="medicos-ce">
+            <h1>Médicos de <span>Hospitais e Postos de Saúde em Massapê, Ceará</span></h1>
+            <p>Conheça os profissionais que lhes atendem.</p>
+        </div>
+        <div class="depoimentos">
+             <!--Aval.1-->
+            <div class="profisional-itens">
+                <div class="medico-user">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="medico-aval">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Dr. Suitberto Sobreira Tavares Junior</h4>
+                    <p>Especialista em Clínica Geral</p>
+                </div>
+            </div>
+    
+             <!--Aval.2-->
+             <div class="profisional-itens">
+                <div class="medico-user">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="medico-aval">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Caio Franco Fontes</h4>
+                    <p>Especialista em Clínica Geral</p>
+                </div>
+            </div>
+            <!--Aval.3-->
+            <div class="profisional-itens">
+                <div class="medico-user">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="medico-aval">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Juliana Melo Izaias</h4>
+                    <p>Especialista em Clínica Geral</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="button-btn">
+            <button>Conheça nossos Médicos e Especialistas</button>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="comentarios">
+        <aside class="comentario-titulo">
+            <main class="depoimento">
+                <h4>Depoimentos sobre <span>Hospitais e Postos de Saúde</span></h4>
+            </main>
+        </aside>
+        <aside class="depoimentos-itens">
+            <main class="depoimentos-avaliacao">
+                <div class="rating">
+                    <input type="radio" id="star1" name="rate" value="1">
+                    <label for="star1" title="text"></label>
+            
+                    <input type="radio" id="star2" name="rate" value="2">
+                    <label for="star2" title="text"></label>
+            
+                    <input  type="radio" id="star3" name="rate" value="3">
+                    <label for="star3" title="text"></label>
+            
+                    <input checked="" type="radio" id="star4" name="rate" value="4">
+                    <label for="star4" title="text"></label>
+                    
+                    <input type="radio" id="star5" name="rate" value="5">
+                    <label for="star5" title="text"></label>
+                </div>
+                <div class="star-comentario">
+                    <p>Priscila Adelino Rodrigues</p>
+                    <a href="#">O exame foi muito bem realizado adorei a profissional, é o acesso aos resultados dos exames.</a>
+                </div>
+            </main>
+
+            <!-- COMENTARIO 2 -->
+            <main class="depoimentos-avaliacao">
+                <div class="rating">
+                    <input type="radio" id="star6" name="rate" value="6">
+                    <label for="star6" title="text"></label>
+            
+                    <input type="radio" id="star7" name="rate" value="7">
+                    <label for="star7" title="text"></label>
+            
+                    <input  type="radio" id="star8" name="rate" value="8">
+                    <label for="star8" title="text"></label>
+            
+                    <input checked="" type="radio" id="star9" name="rate" value="9">
+                    <label for="star2" title="text"></label>
+                    
+                    <input type="radio" id="star10" name="rate" value="10">
+                    <label for="star10" title="text"></label>
+                </div>
+                <div class="star-comentario">
+                    <p>Maria da Conceição Silva</p>
+                    <a href="#">Médica Dra Darluce ginecologista muito atenciosa e profissional.</a>
+                </div>
+            </main>
+
+            <!-- COMENTARIO 3 -->
+            <main class="depoimentos-avaliacao">
+                <div class="rating">
+                    <input type="radio" id="star11" name="rate" value="11">
+                    <label for="star11" title="text"></label>
+            
+                    <input type="radio" id="star12" name="rate" value="12">
+                    <label for="star12" title="text"></label>
+            
+                    <input  type="radio" id="star13" name="rate" value="13">
+                    <label for="star13" title="text"></label>
+            
+                    <input checked="" type="radio" id="star14" name="rate" value="14">
+                    <label for="star14" title="text"></label>
+                    
+                    <input type="radio" id="star15" name="rate" value="15">
+                    <label for="star15" title="text"></label>
+                </div>
+                <div class="star-comentario">
+                    <p>Juliana Monteiro Sousa</p>
+                    <a href="#">sempre faço consultas, parabéns pela equipe, maravilhosos.</a>
+                </div>
+            </main>
+        </aside>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Resultado dos Exames</a></li>
+                        <li><a href="#">Agendar retorno</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Dúvidas Frequentes</a></li>
+                        <li><a href="#">Ouvitoria</a></li>
+                    </ul>
+                </div>
+                <!-- fim do primeiro footer-col -->
+
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Institucional</a></li>
+                        <li><a href="#">código de Ética e Conduta Socioambiental</a></li>
+                        <li><a href="#">trabalhe Conosco</a></li>
+                        <li><a href="#">termos de uso do site</a></li>
+                        <li><a href="#">política de Privacidade</a></li>
+                        <li><a href="#">preferência de Cookies</a></li>
+                    </ul>
+                </div>
+                <!-- fim do segundo footer-col -->
+                
+                <div class="footer-col">
+                    <div class="central">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <strong>Central de Atendimento</strong>
+                        <p><a href="Telefone.html">Número</a></p>
+
+                        <!-- fim da central footer-col -->
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <strong>Atendimento pelo WhatsApp</strong>
+                        <p><a href="Telefone.html">Número</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga nossas Redes</h4>
+                    <div class="medias-sociais">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- fim do primeiro footer-col -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

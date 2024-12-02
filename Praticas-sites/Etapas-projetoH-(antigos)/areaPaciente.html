@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- box icones  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- box icones  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Paciente</title>
+    <link rel="stylesheet" href="areaPaciente.css">
+</head>
+<body>
+    <header>
+        <span>
+            <!-- <img src="img/Logo-Hospital-Icone3.png" alt="Logo-img"> -->
+            <a href="ProjetoH.html"><i class='bx bx-arrow-back'></i></a>
+            <h2>Área do Paciente</h2>
+        </span>
+        <ul class="open">
+            <li><a href="#">Identificação</a></li>
+            <li><a href="#">Atendimento</a></li>
+            <li><a href="#">Receituários</a></li>
+            <li><a href="#">Atestados</a></li>
+            <li><a href="#">Descrição Cirúrgica</a></li>
+            <div id="close-icone" onclick="closeIcone()" >
+                <i class='bx bx-x-circle'></i>
+            </div>
+        </ul>
+        <div id="menu-icone" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <!-- GRUPO-AREA  -->
+    <section class="grupo-area">
+        <div class="area-paciente">
+            <div class="content-area">
+                <a href="#">
+                    <i class='bx bx-clipboard' ></i><p>Prontuário Médico</p>
+                    <span>Registros médicos do paciente, incluindo histórico de saude, diagnósticos, tratamentos e prescrições.</span>
+                </a>
+            </div>
+            <div class="content-area">
+                <a href="#">
+                    <i class='bx bx-dollar-circle' ></i><p>Faturas e pagamentos</p>
+                    <span>Informações sobre os custos de tratamento e opções de pagamento.</span>
+                </a>
+            </div>
+            <div class="content-area">
+                <a href="#">
+                    <i class='bx bx-user-check' ></i><p>Resultado de exames</p>
+                    <span>Acesso aos resultados de exames médicos, como análises de sangue e radiografias.</span>
+                </a>
+            </div>
+            <div class="content-area">
+                <a href="#">
+                    <i class='bx bxs-edit-alt' ></i><p>Atualizações de Informações pessoais</p>
+                    <span>Os pacentes poderam atualizar informações de contato e seguro de saúde.</span>
+                </a>
+            </div>
+            <div class="content-area">
+                <a href="#">
+                    <i class='bx bx-user-voice'></i><p>Educação do paciente</p>
+                    <span>Recursos educacionais sobre condições médicas, procedimentos e cuidados a saúde.</span>
+                </a>
+            </div>
+            <div class="content-area">
+                <a href="#">
+                    <i class='bx bxs-shield-plus' ></i><p>Prescrições Médicas</p>
+                    <span>Informações sobre medicamentos prescritos e como obtê-los.</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let ul = document.querySelector('header ul');
+        function openMenu(){
+            ul.classList.add('open');
+        }
+        function closeIcone(){
+            ul.classList.remove('open');
+        }
+    </script>
+    
+</body>
+</html>

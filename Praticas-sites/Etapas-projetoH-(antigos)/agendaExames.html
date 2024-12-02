@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- box icones  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- box icones  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Exames</title>
+    <link rel="stylesheet" href="agendaExames.css">
+</head>
+<body>
+    <header>
+        <span>
+            <!-- <img src="img/Logo-Hospital-Icone3.png" alt="Logo-img"> -->
+            <a href="ProjetoH.html"><i class='bx bx-arrow-back'></i></a>
+            <h2>Área do Paciente</h2>
+        </span>
+        <ul class="open">
+            <li><a href="#">Identificação</a></li>
+            <li><a href="#">Atendimento</a></li>
+            <li><a href="#">Receituários</a></li>
+            <li><a href="#">Atestados</a></li>
+            <li><a href="#">Descrição Cirúrgica</a></li>
+            <div id="close-icone" onclick="closeIcone()" >
+                <i class='bx bx-x-circle'></i>
+            </div>
+        </ul>
+        <div id="menu-icone" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <section class="exames">
+        <div class="exames-content">
+            <div class="exames-itens">
+                <div class="item-exame">
+                    <i class='bx bxs-ambulance'></i>
+                    <span>Coleta empresarial</span>
+                    <p>O laboratório vai até a sua empresa</p>
+                    <a href="#"><button>Saiba mais</button></a>
+                </div>
+                <div class="item-exame">
+                    <i class='bx bx-plus-medical' ></i>
+                    <span>Coleta Domiciliar</span>
+                    <p>O laboratório vai até a sua casa.</p>
+                    <a href="#"><button>Saiba mais</button></a>
+                </div>
+                <div class="item-exame">
+                    <i class="fa-solid fa-children"></i>
+                    <span>Coleta Infantil</span>
+                    <p>Atenção especial e qualificado para as crianças.</p>
+                    <a href="#"><button>Saiba mais</button></a>
+                </div>
+                <div class="item-exame">
+                    <i class="fa-solid fa-people-line"></i>
+                    <span>Coleta de adultos e idosos</span>
+                    <p>Atenção especial e qualificado para adultos e idosos.</p>
+                    <a href="#"><button>Confira</button></a>
+                </div>
+                <div class="item-exame">
+                    <i class="fa-solid fa-microscope"></i>
+                    <span>Exames realizados</span>
+                    <p>Realize seus exames conosco.</p>
+                    <a href="#"><button>Confira</button></a>
+                </div>
+                <div class="item-exame">
+                    <i class="fa-solid fa-flask-vial"></i>
+                    <span>Dúvidas sobre exames</span>
+                    <p>Selecionaram as duvidas mais frequentes na hora de realizar exames.</p>
+                    <a href="#"><button>Confira</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exame-container">
+
+        <h3 class="title-header">Tipos de exames para melhorar a sua saúde</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, consequatur voluptate dignissimos hic nisi eveniet id officiis debitis distinctio doloribus.</p>
+
+        <div id="exames-itens">
+            <div class="exame-item">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+                <ul>
+                    <li>
+                        <span>Exames Laboratoriais</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in, odit maxime aperiam similique quia.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="exame-item">
+                <i class="fa-solid fa-vial-circle-check"></i>
+                <ul>
+                    <li>
+                        <span>Exames Laboratoriais</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in, odit maxime aperiam similique quia.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="exame-item">
+                <i class="fa-solid fa-syringe"></i>
+                <ul>
+                    <li>
+                        <span>Exames Laboratoriais</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in, odit maxime aperiam similique quia.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="exame-item">
+                <i class="fa-solid fa-capsules"></i>
+                <ul>
+                    <li>
+                        <span>Exames Laboratoriais</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in, odit maxime aperiam similique quia.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="exame-item">
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+                <ul>
+                    <li>
+                        <span>Exames Laboratoriais</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in, odit maxime aperiam similique quia.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="exame-item">
+                <i class="fa-solid fa-bong"></i>
+                <ul>
+                    <li>
+                        <span>Exames Laboratoriais</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in, odit maxime aperiam similique quia.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="medicamento-container">
+        <h1>Informações sobre Medicamentos</h1>
+        <div id="group-medicamento">
+            <div class="medicamento-item">
+                <div class="medicamento">Losartana</div>
+                <div class="medicamento-info">
+                    <ul>
+                        <li>
+                            <span>Uso:</span>
+                            <p>Tratamento da hipertensão</p>
+                        </li>
+                        <li>
+                            <span>Efeito:</span>
+                            <p>Redução da pressão arterial</p>
+                        </li>
+                        <li>
+                            <span>Recomendação:</span>
+                            <p> Tomar conforme prescrição médica para controlar a pressão arterial.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="medicamento-item">
+                <div class="medicamento">Metformina</div>
+                <div class="medicamento-info">
+                    <ul>
+                        <li>
+                            <span>Uso:</span>
+                            <p> Controle da diabetes tipo 2</p>
+                        </li>
+                        <li>
+                            <span>Efeito:</span>
+                            <p>Ajuda a reduzir os níveis de açúcar no sangue</p>
+                        </li>
+                        <li>
+                            <span>Recomendação:</span>
+                            <p>Tomar com as refeições conforme orientação médica.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="medicamento-item">
+                <div class="medicamento">Amoxicilina</div>
+                <div class="medicamento-info">
+                    <ul>
+                        <li>
+                            <span>Uso:</span>
+                            <p>Antibiótico para tratar infecções bacterianas</p>
+                        </li>
+                        <li>
+                            <span>Efeito:</span>
+                            <p>Mata as bactérias causadoras da infecção</p>
+                        </li>
+                        <li>
+                            <span>Recomendação:</span>
+                            <p>Tomar o curso completo, conforme prescrito pelo médico.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="medicamento-item">
+                <div class="medicamento">Medicamento 1</div>
+                <div class="medicamento-info">
+                    <ul>
+                        <li>
+                            <span>Uso:</span>
+                            <p> Controle da diabetes tipo 2</p>
+                        </li>
+                        <li>
+                            <span>Efeito:</span>
+                            <p>Ajuda a reduzir os níveis de açúcar no sangue</p>
+                        </li>
+                        <li>
+                            <span>Recomendação:</span>
+                            <p>Tomar com as refeições conforme orientação médica.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="medicamento-item">
+                <div class="medicamento">Medicamento 1</div>
+                <div class="medicamento-info">
+                    <ul>
+                        <li>
+                            <span>Uso:</span>
+                            <p> Controle da diabetes tipo 2</p>
+                        </li>
+                        <li>
+                            <span>Efeito:</span>
+                            <p>Ajuda a reduzir os níveis de açúcar no sangue</p>
+                        </li>
+                        <li>
+                            <span>Recomendação:</span>
+                            <p>Tomar com as refeições conforme orientação médica.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="medicamento-item">
+                <div class="medicamento">Medicamento 1</div>
+                <div class="medicamento-info">
+                    <ul>
+                        <li>
+                            <span>Uso:</span>
+                            <p> Controle da diabetes tipo 2</p>
+                        </li>
+                        <li>
+                            <span>Efeito:</span>
+                            <p>Ajuda a reduzir os níveis de açúcar no sangue</p>
+                        </li>
+                        <li>
+                            <span>Recomendação:</span>
+                            <p>Tomar com as refeições conforme orientação médica.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="medicamento-item">
+                <div class="medicamento">Medicamento 1</div>
+                <div class="medicamento-info">
+                    <ul>
+                        <li>
+                            <span>Uso:</span>
+                            <p> Controle da diabetes tipo 2</p>
+                        </li>
+                        <li>
+                            <span>Efeito:</span>
+                            <p>Ajuda a reduzir os níveis de açúcar no sangue</p>
+                        </li>
+                        <li>
+                            <span>Recomendação:</span>
+                            <p>Tomar com as refeições conforme orientação médica.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="medicamento-item">
+                <div class="medicamento">Medicamento 1</div>
+                <div class="medicamento-info">
+                    <ul>
+                        <li>
+                            <span>Uso:</span>
+                            <p> Controle da diabetes tipo 2</p>
+                        </li>
+                        <li>
+                            <span>Efeito:</span>
+                            <p>Ajuda a reduzir os níveis de açúcar no sangue</p>
+                        </li>
+                        <li>
+                            <span>Recomendação:</span>
+                            <p>Tomar com as refeições conforme orientação médica.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="medicamento-item">
+                <div class="medicamento">Medicamento 1</div>
+                <div class="medicamento-info">
+                    <ul>
+                        <li>
+                            <span>Uso:</span>
+                            <p> Controle da diabetes tipo 2</p>
+                        </li>
+                        <li>
+                            <span>Efeito:</span>
+                            <p>Ajuda a reduzir os níveis de açúcar no sangue</p>
+                        </li>
+                        <li>
+                            <span>Recomendação:</span>
+                            <p>Tomar com as refeições conforme orientação médica.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <a href="#">Conheça e saiba mais sobre os medicamentos que você precisa <i class="fa-solid fa-play"></i></a>
+    </section>
+
+    <section id="profissional-container">
+        <div class="profissional-section">
+            <div class="prof-inform">
+                <span>Sobre</span>
+                <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime earum et ut.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, molestiae? Corrupti harum, nihil cumque aut, consequatur vero ut, ex itaque consectetur molestiae voluptates dicta!</p>
+                <div class="group-content">
+                    <div id="group-itens">
+                        <ul>
+                            <div class="item-inform">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Localização</span>
+                            </div>
+                            <a href="#">nomeLocalidade</a>
+                        </ul>
+                        <ul>
+                            <div class="item-inform">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>Telefone</span>
+                            </div>
+                            <a href="#">telefone</a>
+                        </ul>
+                    </div>
+                    <div id="group-itens">
+                        <ul>
+                            <div class="item-inform">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Horário</span>
+                            </div>
+                            <a href="#">horario</a>
+                        </ul>
+                        <ul>
+                            <div class="item-inform">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Email</span>
+                            </div>
+                            <a href="#">nome@gmail.com</a>
+                        </ul>
+                    </div>
+                </div>
+                <button>Sobre informações</button>
+            </div>
+            <div class="secoes-content">
+                <div class="secoes-content">
+                    <div id="secoes-item">
+                        <span>1</span>
+                        <ul>
+                            <li><p id="name-secao" >Médicamentos</p></li>
+                            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis aut accusamus.</p></li>
+                        </ul>
+                    </div>
+                    <div id="secoes-item">
+                        <span>2</span>
+                        <ul>
+                            <li><p id="name-secao" >Médicamentos</p></li>
+                            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis aut accusamus.</p></li>
+                        </ul>
+                    </div>
+                    <div id="secoes-item">
+                        <span>3</span>
+                        <ul>
+                            <li><p id="name-secao" >Médicamentos</p></li>
+                            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis aut accusamus.</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato-container">
+        <h4>Contato</h4>
+        <ul>
+            <li>
+                <i class='bx bx-phone-call'></i>
+                <span>número</span>
+                <p>Vivo: (48) 1234 9876 ° TIM:(48) 1234 9876</p>
+                <p>Claro: (48) 1234 9876 ° OI:(48) 1234 9876</p>
+            </li>
+            <li>
+                <i class="fa-regular fa-envelope"></i>
+                <span>email@gmail.com</span>
+                <p>Fale conosco</p>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li>
+                <i class='bx bx-map' ></i>
+                <span>Rua Vereador Paulino Albuquerques.3800 - Centro</span>
+                <p>Bela Vista/SC - CEP: 88143-100</p>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        let ul = document.querySelector('header ul');
+        function openMenu(){
+            ul.classList.add('open');
+        }
+        function closeIcone(){
+            ul.classList.remove('open');
+        }
+    </script>
+
+</body>
+</html>

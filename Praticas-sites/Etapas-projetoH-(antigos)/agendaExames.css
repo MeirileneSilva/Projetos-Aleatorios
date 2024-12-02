@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 6rem;
+    margin-bottom: 4rem;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #079dcf ;
+}
+header span{
+    display: flex;
+    align-items: center;
+}
+header span i{
+    font-size: 1.4rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+header img{
+    height: 230px;
+}
+header h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    /* font-weight: 500; */
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    margin-left: 20px;
+}
+header ul li a {
+    font-size: 1.4rem;
+    color: #fff;
+    transition: 0.2s;
+    display: block;
+}
+header ul li a::after{
+    content: " ";
+    background-color: #fff;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.7s;
+}
+header ul li a:hover::after{
+    width: 100%;
+    margin: auto;
+}
+
+header #menu-icone{
+    display: none;
+}
+header #menu-icone i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+header #close-icone{
+    display: none;
+}
+header #close-icone i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+@media (min-width: 1740px){
+    header{
+        min-width: 1400px;
+    }
+    .exames-content{
+        min-width: 1400px;
+        margin: auto;
+    }
+    .exame-container{
+        min-width: 1400px;
+    }
+    .exame-container #exames-itens{
+        min-width: 1400px;
+    }
+    #medicamento-container{
+        min-width: 1400px;
+    }
+    #medicamento-container #group-medicamento{
+        max-width: 1400px;
+    }
+
+    #profissional-container{
+        min-width: 1400px;
+    }
+    #profissional-container .profissional-section{
+        min-width: 1400px;
+    }
+    .secoes-content #secoes-item span{
+        min-width: 3.2rem;
+    }
+    .contato-container{
+        min-width: 1400px;
+    }
+    .contato-container ul{
+        max-width: 1400px;
+    }
+
+}
+@media (max-width: 1740px){
+    header{
+        min-width: 1280px;
+    }
+    header ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 100%;
+        padding: 20px;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #0071a5;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    header ul.open{
+        clip-path: circle(141.2% at 100% 0);
+    }
+    header .open li a{
+        margin: 10px 0;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    header #menu-icone{
+        display: block;
+    }
+    header #close-icone{
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 1rem;
+    }
+    .exames-content{
+        min-width: 1280px;
+        margin: auto;
+    }
+    .exame-container{
+        min-width: 1280px;
+    }
+    .exame-container > p{
+        padding: 0 14rem;
+    }
+    .exame-container #exames-itens{
+        max-width: 1100px;
+        flex-wrap: wrap;
+    }
+    #medicamento-container{
+        min-width: 1280px;
+    }
+    #medicamento-container #group-medicamento{
+        max-width: 1200px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #medicamento-container #group-medicamento .medicamento-item{
+        min-width: 500px;
+        min-height: 100px;
+    }
+    #profissional-container{
+        min-width: 1280px;
+    }
+    #profissional-container .profissional-section{
+        max-width: 1280px;
+        margin: 4rem auto;
+        flex-direction: column-reverse;
+    }
+    #profissional-container .profissional-section .prof-inform{
+        min-width: 1200px;
+        padding: 0 30px;
+        margin: auto;
+    }
+    .group-content{
+        min-width: 1100px;
+        margin: auto;
+    }
+    .group-content #group-itens{
+        min-width: 34rem;
+    }
+    .group-content #group-itens ul{
+        min-width: 34rem;
+    }
+    .secoes-content{
+        min-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 3rem;
+    }
+    .secoes-content #secoes-item{
+        max-width: 380px;
+        margin: auto;
+    }
+    .secoes-content #secoes-item span{
+        min-width: 3.2rem;
+    }
+    .contato-container{
+        min-width: 1280px;
+        min-height: 40rem;
+    }
+    .contato-container ul{
+        max-width: 1200px;
+        position: relative;
+        top: -3rem;
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 780px){
+    header{
+        min-width: 800px;
+    }
+    header h2{
+        font-size: 1.4rem;
+    }
+    header #menu-icone i, header #close-icone i{
+        font-size: 2.5rem;
+    }
+    header ul li a{
+        font-size: 1rem;
+        color: #fff;
+    }
+    .exames-content{
+        min-width: 800px;
+        margin: auto;
+    }
+    .exame-container{
+        min-width: 800px;
+    }
+    .exame-container #exames-itens{
+        max-width: 800px;
+        flex-direction: column;
+    }
+    .exame-container > p{
+        padding: 0;
+    }
+    #medicamento-container{
+        min-width: 800px;
+    }
+    #medicamento-container #group-medicamento{
+        max-width: 800px;
+        flex-direction: column;
+    }
+    #medicamento-container #group-medicamento .medicamento-item{
+        min-width: 500px;
+        min-height: 100px;
+    }
+    #profissional-container{
+        min-width: 800px;
+    }
+    #profissional-container .profissional-section{
+        min-width: 800px;
+        flex-direction: column-reverse;
+    }
+    #profissional-container .profissional-section .prof-inform{
+        min-width: 700px;
+        padding: 0 30px;
+        margin: auto;
+    }
+    .group-content{
+        min-width: 600px;
+        margin: auto;
+        flex-direction: column;
+    }
+    .group-content #group-itens{
+        min-width: 45rem;
+        margin: 1rem 0;
+    }
+    .group-content #group-itens ul{
+        min-width: 40rem;
+        padding: 0 20px;
+    }
+    .secoes-content{
+        min-width: 750px;
+        flex-direction: column;
+        margin: 0 auto 3rem;
+    }
+    .secoes-content .secoes-content{
+        max-width: 800px;
+        margin: auto;
+    }
+    .secoes-content #secoes-item{
+        max-width: 850px;
+    }
+    .contato-container{
+        min-width: 800px;
+        min-height: 60rem;
+    }
+    .contato-container ul{
+        max-width: 500px;
+        flex-direction: column;
+    }
+    .contato-container ul li{
+        margin: 3rem 0;
+    }
+}
+
+
+
+/* .exames{
+    height: 55rem;
+    position: relative;
+    top: -4rem;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url(img/exames.jpg);
+} */
+
+.exames .exames-content{
+    /* height: 55rem; */
+    margin: 3rem 0 6rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #2180dec7; */
+}
+.exames-content .exames-itens{
+    width: 100rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.exames-content .item-exame{
+    height: 20rem;
+    width: 30rem;
+    margin: 0.5rem;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 3px solid #00aee8;
+    background: #00aee80f;
+}
+
+.exames-content .item-exame i{
+    font-size: 3.5rem;
+    color: #00008B;
+    margin-bottom: 1rem;
+}
+.exames-content .item-exame span{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #079dcf;
+}
+.exames-content .item-exame p{
+    font-size: 1.2rem;
+    margin: 10px 0 26px;
+    color: #079dcf;
+    text-align: center;
+}
+.exames-content .item-exame button{
+    width: 10rem;
+    height: 2.8rem;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #079dcf;
+    border-radius: 0.5rem;
+    background: none;
+    border: 2.8px solid #079dcf;
+    transition: 0.5s;
+}
+.exames-content .item-exame button:hover{
+    color: #fff;
+    background-color: #079dcf;
+    box-shadow: 0 0 1rem #00bfff;
+}
+
+.exame-container{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.exame-container .title-header{
+    font-size: 2.2rem;
+    text-align: center;
+    color: #00aee8;
+}
+.exame-container > p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 0 3rem;
+    color: #808080;
+}
+#exames-itens{
+    width: 100rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#exames-itens .exame-item{
+    width: 30rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0.8rem;
+    padding: 10px;
+}
+#exames-itens .exame-item i{
+    height: 6rem;
+    width: 10rem;
+    text-align: center;
+    font-size: 2.6rem;
+    color: #00008B;
+    padding: 24px;
+    border: 3px solid #079dcf;
+    border-radius: 50%;
+}
+#exames-itens .exame-item ul{
+    margin-left: 1rem;
+}
+#exames-itens .exame-item ul li span{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #079dcf;
+}
+#exames-itens .exame-item ul li p{
+    color: #606060;
+}
+
+#medicamento-container{
+    margin-top: 8rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#medicamento-container h1{
+    font-size: 2.2rem;
+    margin: 1rem 0 3rem;
+    color: #079dcf;
+}
+#medicamento-container h1::after{
+    display: block;
+    height: 3px;
+    width: 8rem;
+    content: "";
+    border-radius: 8px;
+    background-color: #00aee8;
+}
+#medicamento-container a{
+    margin-top: 1rem;
+    color: #00aee8;
+
+}
+#medicamento-container a i{
+    padding: 0 5px;
+}
+#medicamento-container a:hover{
+    text-decoration: underline;
+}
+#group-medicamento{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.medicamento-item{
+    width: 24rem;
+    padding: 8px;
+    cursor: pointer;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00aee8;
+    margin: 0.8rem;
+    outline: 4px solid #079dcf;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in;
+}
+.medicamento-item:hover{
+    box-shadow: 0 0 2rem #00aee8;
+}
+.medicamento {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    color: #fff;
+    transition: max-height 0.6s ease-out;
+    max-height: 40px;
+    overflow: hidden;
+}
+.medicamento:hover {
+    max-height: 1000px;
+}
+.medicamento-info{
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ;
+}
+.medicamento-info ul li{
+    list-style: circle;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.medicamento-info ul li span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 0;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+.medicamento:hover + .medicamento-info {
+    max-height: 1000px;
+}
+
+
+.profissional-section{
+    margin: 8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prof-inform{
+    width: 50rem;
+}
+.prof-inform > span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
+    color: #808080;
+    text-transform: uppercase;
+}
+.prof-inform > span::after{
+    height: 1px;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    content: "";
+    background-color: #079dcf4c;
+}
+.prof-inform h5{
+    font-size: 2rem;
+    color: #333333;
+
+}
+.prof-inform > p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #808080;
+}
+.group-content{
+    width: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#group-itens{
+    margin-right: 1rem;
+}
+#group-itens ul{
+    width: 24rem;
+    margin: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#group-itens .item-inform{
+    display: flex;
+    align-items: center;
+}
+#group-itens .item-inform i{
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #00aee8;
+}
+#group-itens .item-inform span{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+#group-itens a{
+    font-size: 1.05rem;
+    color: #333333;
+}
+.prof-inform button{
+    width: 20rem;
+    margin: 2rem 0;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00aee8;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1.2rem #00bfff;
+    transition: 0.2s ease-in;
+}
+.prof-inform button:hover{
+    opacity: 0.8;
+    box-shadow: none;
+}
+.secoes-content{
+    width: 45rem;
+    margin-left: 1.5rem;
+}
+#secoes-item {
+    display: flex;
+    align-items: flex-start;
+}
+#secoes-item li{
+    margin: 0.8rem 0;
+}
+#secoes-item > span{
+    width: 4rem;
+    height: 3.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 1.3rem;
+    background-color: #00bfff;
+    border-radius: 50%;
+    border: 3px solid #00bfff;
+    box-shadow: 0 0 1.3rem #00bfff;
+    transition: 0.3s ease-in;
+}
+
+#secoes-item > span:hover{
+    opacity: 0.8;
+    color: #00bfff;
+    background-color: #fff;
+    box-shadow: none;
+}
+#secoes-item #name-secao{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00bfff;
+    text-transform: uppercase;
+}
+#secoes-item ul p{
+    font-size: 1.2rem;
+    color: #333333;
+}
+.contato-container{
+    height: 25rem;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #079dcf;
+}
+.contato-container h4{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-underline-offset: 10px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.contato-container ul{
+    width: 120rem;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contato-container ul li{
+    width: 30rem;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.contato-container ul li i{
+    font-size: 2.4rem;
+    margin: 1rem 0 0;
+    color: #fff;
+}
+.contato-container ul li span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #fff;
+
+}
+.contato-container ul li p{
+    font-weight: 500;
+    margin: 5px 0;
+    color: #ffffffc2;
+
+}
+.contato-container ul li a i{
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.contato-container ul li a i:hover{
+    background-color: #00FF7F;
+    box-shadow: 0 0 1rem #00769d;
+}

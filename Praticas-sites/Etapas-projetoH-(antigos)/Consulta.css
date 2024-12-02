@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+
+}
+body{
+    background-color: #ffffff;
+}
+
+/* Menu Lateral */
+.header-titulo{
+    width: 100%;
+    height: 4rem;
+    padding: 25px 0 8px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 4px #aaaa;
+    background-color: #fff;
+}
+.box-menu{
+    position: relative;
+}
+.box-menu .sidebar-menu{
+    height: 100%;
+    width: 330px;
+    top: 0;
+    z-index: 1;
+    background: #177d17;
+    position: fixed;
+    overflow: hidden;
+    left: -400px;
+    transition: all 0.3s linear;
+}
+
+.sidebar-menu .menu{
+    position: relative;
+    top: 88px;
+    width: 100%;
+}
+
+.sidebar-menu .fixo{
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 0.5rem;
+    background-color: #FFA500;
+}
+.sidebar-menu .menu .fixo a{
+    color: #fff;
+}
+
+.sidebar-menu .menu li{
+    padding: 14px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar-menu .menu li:hover{
+    background-color: #32cd32a3;
+}
+.sidebar-menu .menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar-menu{
+    left: 0;
+}
+.box-menu .menu-icone i{
+    font-size: 26px;
+    right: -35px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    line-height:16px;
+}
+.sidebar-menu  .btn-close i{
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 60px;
+    position: absolute;
+    left: 290px;
+}
+.btn-close i{
+    color: #fff;
+    left: 38px
+}
+
+
+.header-titulo .logo img{
+    height: 70px;
+}
+.localidade-icone{
+    display: flex;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.header-titulo .localidade-icone i{
+    font-size: 18px;
+    color: #228B22;
+    margin: 5px 5px 0 0;
+}
+.header-titulo .localidade-icone a{
+    font-size: 20px;
+    color: #333333;
+    transition: 0.5s;
+}
+
+.localidade-icone a:after{
+    content: "";
+    background-color: #32CD32;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+@media (max-width: 560px) {
+    .header-titulo{
+        min-width: 500px;
+    }
+    .header-titulo .logo img{
+        position: relative;
+        left: 30px;
+    }
+    .container{
+        max-width: 800px;
+    }
+    .content{
+        min-height: 400px;
+        max-width: 400px;
+        position: relative;
+        left: 2.4rem;
+    }
+    .navigation .bar{
+        display: none;
+    }
+    .titulo{
+        max-width: 700px;
+    }
+    .icones-container .icones-itens{
+        min-width: 950px;
+        padding-left: 28px;
+    }
+    .icones-container .icones{
+        min-width: 400px;
+        min-height: 9rem;
+        position: relative;
+        left: -1rem;
+    }
+    .icones-container .icones-itens .icones img{
+        width: 4rem;
+        height: 4rem;
+        position: relative;
+        left: -1rem;
+    }
+    .icones-container .icones-itens .icones i{
+        font-size: 3.4rem;
+    }
+    .icones-container .icones-itens .icones a{
+        font-size: 2rem;
+    }
+    
+    .medicos-avaliados{
+        width: 430px;
+        margin: 0 auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .medicos-avaliados .medicos-ce h1{
+        font-size: 2rem;
+    }
+    .depoimentos{
+        flex-direction: column;
+    }
+    .depoimentos .profisional-itens{
+        height: 9rem;
+    }
+    .comentarios{
+        margin: auto;
+        min-width: 980px;
+        flex-direction: column;
+    }
+    .depoimentos-itens{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 920px){
+    .header-titulo{
+        min-width: 900px;
+    }
+    .container{
+        min-width: 900px;
+    }
+    .content{
+        max-width: 800px;
+        position: relative;
+        right: -2.6rem;
+    }
+    .navigation .bar{
+        display: none;
+    }
+    .card-content{
+        min-width: 900px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-title{
+        margin: auto;
+    }
+    .card-content-item{
+        max-width: 900px;
+        margin: 0 auto;
+        align-items: center;
+        cursor: pointer;
+        /* flex-wrap: wrap; */
+        overflow-x: scroll;
+    }
+    .card-content-item::-webkit-scrollbar{
+        display: none;
+    }
+    .card-group{
+        min-width: 28rem;
+    }
+    .card-group img{
+        max-width: 28rem;
+    }
+    .card-group ul{
+        min-width: 24rem;
+        position: relative;
+        left: -1rem;
+    }
+    .card-group button{
+        max-width: 90%;
+    }
+    .medicos-avaliados {
+        min-width: 900px;
+    }
+    .medicos-avaliados .medicos-ce h1{
+        font-size: 2rem;
+        padding: 0 4rem;
+    }
+    .depoimentos{
+        flex-direction: column;
+    }
+    .comentarios .depoimento{
+        margin: 0 9rem;
+    }
+    .depoimentos .profisional-itens{
+        min-width: 38rem;
+    }
+    .comentarios{
+        min-width: 980px;
+        margin: auto;
+        flex-direction: column;
+
+    }
+    .depoimentos-itens{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        min-width: 900px;
+    }
+    .footer-col{
+        width: 50%;
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 1200px){
+    .header-titulo{
+        min-width: 980px;
+    }
+    .container{
+        min-width: 980px;
+    }
+    .content{
+        max-width: 900px;
+    }
+    .card-group{
+        max-width: 18rem;
+    }
+    .content-card{
+        min-width: 980px;
+    }
+    .card-group img{
+        max-width: 18rem;
+    }
+    .card-group ul{
+        min-width: 10rem;
+        position: relative;
+        right: -4rem;
+    }
+    .card-group button{
+        max-width: 90%;
+    }
+    .medicos-avaliados {
+        min-width: 980px;
+    }
+    .medicos-avaliados .medicos-ce h1{
+        font-size: 2rem;
+        padding: 0 6rem;
+    }
+    .depoimentos{
+        flex-direction: column;
+    }
+    .comentarios .depoimento{
+        margin: 0 9rem;
+    }
+    .depoimentos .profisional-itens{
+        min-width: 600px;
+    }
+    .depoimentos-itens{
+        max-width: 800px;
+        margin: auto;
+        flex-direction: column;
+    }
+    footer{
+        min-width: 980px;
+    }
+    .footer-col{
+        width: 50%;
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 1200px){
+    .header-titulo{
+        min-width: 1200px;
+    }
+    .container{
+        min-width: 1200px;
+    }
+    .content{
+        max-width: 1080px;
+    }
+    .card-group{
+        max-width: 25rem;
+    }
+    .content-card{
+        min-width: 980px;
+    }
+    .card-group img{
+        max-width: 18rem;
+    }
+    .card-group ul{
+        min-width: 20rem;
+        position: relative;
+        right: -4rem;
+    }
+    .card-group button{
+        max-width: 90%;
+    } 
+    .medicos-avaliados .medicos-ce h1{
+        font-size: 2rem;
+        padding: 0 6rem;
+    }
+    .depoimentos .profisional-itens{
+        max-width: 30rem;
+    }
+}
+
+/* Navegaçao */
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0;
+    background-color: rgba(28, 213, 71, 0.35);
+    margin-bottom: 80px;
+}
+.container .titulo {
+    width: 770px;
+    text-align: left;
+    display: inline-block;
+}
+
+.container .titulo i{
+    font-size: 2rem;
+    color: #1a1a1a;
+}
+.container .titulo strong{
+    font-size: 1.8rem;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.container .titulo p{
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.icones-itens .icones{
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+    padding: 0 30px;
+    background-color: #fff;
+    margin: 5px 6px;
+}
+.container .icones-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icones-itens .icones:hover{
+    transform: translateY(-2.5px);
+    transition: all 200ms;
+}
+.icones-itens .icones i{
+    font-size: 35px;
+    color: #228B22;
+    margin-right: 18px;
+}
+
+.icones-itens .icones a{
+    font-size: 20px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.icones-container .icones-itens{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* Carrossel de imagens */
+
+.content{
+    height: 400px;
+    width: 1400px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0 0 1rem #544c4c88;
+}
+.content .slide img{
+    height: 100%;
+    width: 100%;
+}
+.navigation{
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #cfcfcf;
+    margin: 6px;
+    border-radius: 12px;
+    cursor: pointer;
+    transform: .5s ease;
+}
+.bar:hover{
+    background-color: #228B22;
+}
+.input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+/* Unidades de saúde */
+
+.content-card {
+    margin-top: 6rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-card .card-title h2{
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 0 0 2rem;
+    color: #424242	;
+}
+.content-card .card-title span{
+    color: #32CD32	;
+}
+.card-content-item {
+    display: flex;
+}
+.card-content-item .card-group{
+    width: 28rem;
+    height: 32rem;
+    margin: 8px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px #aaa;
+    background-color: #fff;
+}
+
+.card-content-item .card-group img{
+    width: 28rem;
+    height: 16rem;
+    border-radius: 1rem 1rem 0 0;
+}
+.card-content-item .card-group > span{
+    font-size: 1.3rem;
+    margin: 5px 0;
+    font-weight: 600;
+}
+.card-content-item .card-group ul{
+    margin-left: -8rem;
+}
+.card-content-item .card-group ul li{
+    margin: 1rem 0;
+}
+.card-content-item .card-group ul li i{
+    color: #32CD32;
+}
+.card-content-item .card-group ul li a{
+    color: #333333;
+    font-size: 1.08rem;
+    font-weight: 500;
+}
+.card-content-item .card-group ul li  span{
+    font-size: 1.02rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.card-content-item .card-group button{
+    width: 25rem;
+    color: #fff;
+    padding: 6px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: #228B22;
+}
+
+/*Depoimentos*/
+
+.medicos-avaliados{
+    margin-top: 6rem;
+}
+.depoimentos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medicos-avaliados .medicos-ce h1{
+    margin: 0 0 16px;
+    font-size: 2.3rem;
+    text-align: center;
+    color: #1a1a1a;
+}
+.medicos-avaliados .medicos-ce h1 span{
+    color: #32CD32;
+
+}
+.medicos-avaliados .medicos-ce p{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #606060;
+}
+
+.profisional-itens{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 130px;
+    padding: 0 10px;
+    width: 430px;
+    margin: 5px;
+    box-shadow: 2px 2px 3px #aaaa;
+    border-radius: 10px;
+    border-top: 4px solid #228B22;
+}
+
+.medico-user i{
+    font-size: 72px;
+    color: #808080;
+    margin-right: 15px;
+}
+
+.medico-aval .star i{
+    font-size: 12px;
+    color: rgb(242, 226, 5);
+}
+.profisional-itens .medico-aval h4{
+    color: #228B22;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.profisional-itens .medico-aval h4:hover{
+    color: #32CD32;
+}
+.profisional-itens .medico-aval p{
+    font-size: 20px;
+}
+.button-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-btn button{
+    padding: 10px 20px;
+    border-radius: 13px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 60px;
+    color: #32CD32;
+    border: 1px solid #32CD32;
+    transition: 0.5s;
+    background-color: transparent;
+    
+}
+.button-btn button:hover{
+    background-color: #32CD32;
+    color: #fff;   
+}
+
+/* Depoimentos */
+
+.depoimentos-itens{
+    display: flex;
+    justify-content: center;
+}
+.comentario-titulo .depoimento h4{
+    font-size: 2.3rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 6rem 0 10px;
+}
+.comentario-titulo .depoimento h4 span{
+    color: #32CD32;
+}
+.depoimentos-itens .depoimentos-avaliacao {
+    text-align: center;
+    margin: 50px 60px;
+}
+.depoimentos-itens .depoimentos-avaliacao p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+.depoimentos-itens .depoimentos-avaliacao a{
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    margin-top: 5px;
+    padding:0 80px 10px;
+    border-bottom: 2px solid #aaaaaa8b;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+}
+  
+.rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: #606060;
+}
+  
+.rating:not(:checked) > label:before {
+content: '★';
+}
+  
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+}
+  
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+color: #ff9e0b;
+}
+  
+.rating > input:checked ~ label {
+    color: #ffa723;
+}
+ 
+/* Rodapé */
+
+
+footer{
+    background-color: #333333;
+    margin-top: 80px;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 3%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col {
+    width: 24%;
+    padding: 0 5px;
+}
+.footer-col h4{
+    width: 12rem;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid #606060;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a,.footer-col a{
+    font-size: 18px;
+    margin: 14px 0;
+    text-transform: capitalize; /* Para que a primeira letra fique maiuscula :)*/
+    color: #fff;
+    font-weight: 300px;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover, .footer-col .central a:hover{
+    color: #32CD32;
+    padding-left: 10px;
+}
+.central{
+    display: inline-block;
+}
+.footer-col .central i{
+    font-size: 20px;
+    color: #fff;
+}
+.footer-col .central strong{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.footer-col .medias-sociais{
+    margin-top: 10px;
+
+}
+.footer-col .medias-sociais a{
+    display: inline-flex;
+    height: 45px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    color: #cecdcd;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-sociais a:hover{
+    color: #228B22;
+    background-color: #fff;
+}
+
+@media (min-width: 500px){
+    .footer-col{
+        max-width: 1400px;
+    }
+}

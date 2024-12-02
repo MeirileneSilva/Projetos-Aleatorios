@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- box icones  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- box icones  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca Odontologia</title>
+    <link rel="stylesheet" href="Odontologia.css">
+</head>
+<body>
+
+    <header>
+        <span>
+            <!-- <img src="img/Logo-Hospital-Icone3.png" alt="Logo-img"> -->
+            <a href="ProjetoH.html"><i class='bx bx-arrow-back'></i></a>
+            <h2>Odontologia</h2>
+        </span>
+        <ul class="open">
+            <li><a href="#">Identificação</a></li>
+            <li><a href="#">Atendimento</a></li>
+            <li><a href="#">Receituários</a></li>
+            <li><a href="#">Atestados</a></li>
+            <li><a href="#">Descrição Cirúrgica</a></li>
+            <div id="close-icone" onclick="closeIcone()" >
+                <i class='bx bx-x-circle'></i>
+            </div>
+        </ul>
+        <div id="menu-icone" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <script>
+        let ul = document.querySelector('header ul');
+        function openMenu(){
+            ul.classList.add('open');
+        }
+        function closeIcone(){
+            ul.classList.remove('open');
+        }
+    </script>
+    
+    <section class="container">
+        <div class="dentista-content">
+            <h4>Seu sorriso é a nossa maior prioridade</h4>
+            <p>Temos uma equipe de profissionais qualificados, prontos para lhe dar o melhor tratamento dentário.</p>
+
+            <div class="content-itens">
+                <div class="content-item">
+                    <i class="fa-solid fa-medal"></i>
+                    <span>Profissionais Experientes</span>
+                    <p>Temos profissionais experientes, com exelente formação e que atuam há muitos anos no mercado.</p>
+                </div>
+                <div class="content-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Atendimento Humanizado</span>
+                    <p>Seja por telefone ou no consultório cuidamos de você de um jeito único e comprometido.</p>
+                </div>
+                <div class="content-item">
+                    <i class="fa-solid fa-tooth"></i>
+                    <span>Tratamentos Modernos</span>
+                    <p>Possuímos os tratamento mais modernos em ortondontia, implantes, estética e saúde bucal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-servicos">
+        <h4>Conheça nossos tratamentos</h4>
+        <p id="services">Tenha acesso a todos os tratamentos disponíveis em nosso Hospital.</p>
+        <div class="servicos-content">
+            <div id="servico-img">
+                <img src="img/Desntista-section.jpeg" alt="img">
+                <ul>
+                    <li>
+                        <span>Tratamento Odontologico</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur asperiores deserunt natus voluptas? Inventore dolores molestias quas labore repudiandae.</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="servico-img">
+                <img src="img/Desntista-section2.jpeg" alt="img">
+                <ul>
+                    <li>
+                        <span>Tratamento Odontologico</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur asperiores deserunt natus voluptas? Inventore dolores molestias quas labore repudiandae.</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="servico-img">
+                <img src="img/Desntista-section3.jpeg" alt="img">
+                <ul>
+                    <li>
+                        <span>Tratamento Odontologico</span>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur asperiores deserunt natus voluptas? Inventore dolores molestias quas labore repudiandae.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> 
+
+    <section id="especialidades">
+        <div class="container-itens">
+            <span>Especialidades</span>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-tooth"></i>
+                    <span>Dentistíca (Estética)</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-teeth-open"></i>
+                    <span>Orodontia</span>
+                </li>
+                <li>
+                    <i class="fa-regular fa-face-grimace"></i>
+                    <span>Ortopediatria</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-nurse"></i>
+                    <span>Implantodontia</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-hospital-user"></i>
+                    <span>Endodontia</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <span>Prótese</span>
+                </li>
+            </ul>
+        </div>
+    </section> 
+    
+    <section id="services-container">
+        <div class="servicos-container">
+            <div id="nosso-servico">
+                <div class="servicos-img">
+                    <img src="img/dentista2.jpeg" alt="img">
+                    <h5>cirurgia médica1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quibusdam voluptatem, porro iste laborum beatae ipsum laudantium adipisci optio alias nostrum laboriosam, ullam culpa assumenda aliquam.</p>
+                </div>
+                <div class="servicos-img">
+                    <img src="img/dentista2.jpeg" alt="img">
+                    <h5>cirurgia médica2</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quibusdam voluptatem, porro iste laborum beatae ipsum laudantium adipisci optio alias nostrum laboriosam, ullam culpa assumenda aliquam.</p>
+                </div>
+                <div class="servicos-img">
+                    <img src="img/dentista2.jpeg" alt="img">
+                    <h5>cirurgia médica3</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quibusdam voluptatem, porro iste laborum beatae ipsum laudantium adipisci optio alias nostrum laboriosam, ullam culpa assumenda aliquam.</p>
+                </div>
+                <div class="servicos-img">
+                    <img src="img/dentista2.jpeg" alt="img">
+                    <h5>cirurgia médica4</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quibusdam voluptatem, porro iste laborum beatae ipsum laudantium adipisci optio alias nostrum laboriosam, ullam culpa assumenda aliquam.</p>
+                </div>
+                <div class="servicos-img">
+                    <img src="img/dentista2.jpeg" alt="img">
+                    <h5>cirurgia médica5</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quibusdam voluptatem, porro iste laborum beatae ipsum laudantium adipisci optio alias nostrum laboriosam, ullam culpa assumenda aliquam.</p>
+                </div>
+                <div class="servicos-img">
+                    <img src="img/dentista2.jpeg" alt="img">
+                    <h5>cirurgia médica6</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quibusdam voluptatem, porro iste laborum beatae ipsum laudantium adipisci optio alias nostrum laboriosam, ullam culpa assumenda aliquam.</p>
+                </div>
+            </div>
+            <div class="horarios-servicos">
+                <h4>jornada de trabalho</h4>
+                <ul>
+                    <li>
+                        <span>Segunda</span>
+                        <p>09-00-20:00</p>
+                    </li>
+                    <li>
+                        <span>Terça</span>
+                        <p>09-00-20:00</p>
+                    </li>
+                    <li>
+                        <span>Quarta</span>
+                        <p>09-00-20:00</p>
+                    </li>
+                    <li>
+                        <span>quinta</span>
+                        <p>09-00-20:00</p>
+                    </li>
+                    <li>
+                        <span>sexta</span>
+                        <p>09-00-20:00</p>
+                    </li>
+                    <li>
+                        <span>sabado</span>
+                        <p>09-00-20:00</p>
+                    </li>
+                    <li>
+                        <span>domingo</span>
+                        <p>09-00-20:00</p>
+                    </li>
+                    <h5>Taxas e Seguros</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis magni iste quas, nemo vel repellendus dolorem ab rerum ipsum aliquid adipisci odit similique expedita sit quisquam.
+
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="horario-container">
+        <div id="horarios-content">
+            <div class="horario-item">
+                <div class="infor-hora">
+                    <span class="titulo-ctn">Horários disponíveis</span>
+                </div>
+                <ul>
+                    <i class='bx bxs-calendar' ></i>
+                    <li>
+                        <span class="seman">Segunda:</span>
+                        <span class="hora">8:00am-7:00pm</span>
+                    </li>
+                    <li>
+                        <span class="seman">Quinta:</span>
+                        <span class="hora">9:00am-5:00pm</span>
+                    </li>
+                    <li>
+                        <span class="seman">Sabado:</span>
+                        <span class="hora">9:00am-4:00pm</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="horario-item">
+                <div class="infor-hora">
+                    <span  class="titulo-ctn">Equipe de médicos</span>
+                </div>
+                <ul>
+                    <i class='bx bx-calendar-event' ></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veritatis consequatur quisquam, nemo sapiente asperiores blanditiis quos corporis.</p>
+                </ul>
+            </div>
+            <div class="horario-item">
+                <div class="infor-hora">
+                    <span  class="titulo-ctn" >Agendamentos</span>
+                </div>
+                <ul>
+                    <i class="fa-solid fa-suitcase-medical"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veritatis consequatur quisquam, nemo sapiente asperiores blanditiis quos corporis.</p>
+                </ul>
+            </div>
+        </div>
+    </section> 
+
+    <section class="containerFluid">
+        <h2>Frequently Asked Questions(FAQs)</h2>
+        <div class="accordion">
+          <div class="icon"></div>
+          <h5>O que é Lorem Ipsum?</h5>
+        </div>
+        <div class="panel">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+      
+        <div class="accordion">
+          <div class="icon"></div>
+          <h5>Porque usamos isso?</h5>
+        </div>
+        <div class="panel">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+      
+        <div class="accordion">
+          <div class="icon"></div>
+          <h5>De onde isso vem?</h5>
+        </div>
+        <div class="panel">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+      
+        <div class="accordion">
+          <div class="icon"></div>
+          <h5>Porque usamos isso?</h5>
+        </div>
+        <div class="panel">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+    </section>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var len = acc.length;
+        for (i = 0; i < len; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    var i;
+                }
+            });
+        }
+    </script>
+
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Resultado dos Exames</a></li>
+                        <li><a href="#">Agendar retorno</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Dúvidas Frequentes</a></li>
+                        <li><a href="#">Ouvitoria</a></li>
+                    </ul>
+                </div>
+                <!-- fim do primeiro footer-col -->
+    
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Institucional</a></li>
+                        <li><a href="#">código de Ética e Conduta Socioambiental</a></li>
+                        <li><a href="#">trabalhe Conosco</a></li>
+                        <li><a href="#">termos de uso do site</a></li>
+                        <li><a href="#">política de Privacidade</a></li>
+                        <li><a href="#">preferência de Cookies</a></li>
+                    </ul>
+                </div>
+                <!-- fim do segundo footer-col -->
+                
+                <div class="footer-col">
+                    <div class="central">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <strong>Central de Atendimento</strong>
+                        <p><a href="Telefone.html">Número</a></p>
+    
+                        <!-- fim da central footer-col -->
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <strong>Atendimento pelo WhatsApp</strong>
+                        <p><a href="Telefone.html">Número</a></p>
+                    </div>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Siga nossas Redes</h4>
+                    <div class="medias-sociais">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- fim do primeiro footer-col -->
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

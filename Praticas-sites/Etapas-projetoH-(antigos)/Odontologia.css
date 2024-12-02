@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 4rem;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #005bb6e3 ;
+}
+header span{
+    display: flex;
+    align-items: center;
+}
+header span i{
+    font-size: 1.4rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+header img{
+    height: 230px;
+}
+header h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    /* font-weight: 500; */
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    margin-left: 20px;
+}
+header ul li a {
+    font-size: 1.4rem;
+    color: #fff;
+    transition: 0.2s;
+    display: block;
+}
+header ul li a::after{
+    content: " ";
+    background-color: #fff;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.7s;
+}
+header ul li a:hover::after{
+    width: 100%;
+    margin: auto;
+}
+header #menu-icone{
+    display: none;
+}
+header #menu-icone i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+header #close-icone{
+    display: none;
+}
+header #close-icone i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+@media (min-width: 1500px){
+    header{
+        min-width: 1400px;
+    }
+    .container{
+        min-width: 1400px;
+    }
+    .container-servicos{
+        min-width: 1400px;
+    }
+
+    #especialidades{
+        min-width: 1400px;
+    }
+    .container-itens ul{
+        min-width: 1400px;
+        margin: auto;
+    }
+    #services-container{
+        min-width: 1400px;
+    }
+    #horarios-content {
+        min-width: 1400px;
+    }
+    footer{
+        min-width: 1400px;
+    }
+}
+@media (max-width: 1740px){
+    header{
+        min-width: 1280px;
+    }
+    header ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 100%;
+        padding: 20px;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #00008b;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    header ul.open{
+        clip-path: circle(141.2% at 100% 0);
+    }
+    header ul a{
+        margin: 10px 0;
+        font-size: 2rem;
+    }
+    header #menu-icone{
+        display: block;
+    }
+    header #close-icone{
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 1rem;
+    }
+    .container{
+        min-width: 1280px;
+    }
+    .container-servicos{
+        min-width: 1280px;
+    }
+    #servico-img{
+        min-width: 300px;
+    }
+    #servico-img img{
+        max-width: 25rem;
+    }
+    #servico-img ul{
+        max-width: 25rem;
+    }
+    #especialidades{
+        min-width: 1280px;
+    }
+    .container-itens ul{
+        max-width: 56rem;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .container-itens ul li{
+        margin: 1rem 20px;
+    }
+    #services-container{
+        position: relative;
+        min-width: 1250px;
+    }
+    #horarios-content {
+        min-width: 1280px;
+        flex-direction: column;
+    }
+    #horarios-content .horario-item{
+        margin: 10px 5rem 0 0;
+    }
+    #horarios-content .horario-item ul{
+        min-width: 900px;
+    }
+    .containerFluid{
+       min-width: 980px;
+       position: relative;
+       right: -10rem;
+    }
+    footer{
+        min-width: 1280px;
+    }
+}
+@media (max-width: 780px){
+    header{
+        min-width: 760px;
+    }
+    header h2{
+        font-size: 1.4rem;
+    }
+    header #menu-icone i, header #close-icone i{
+        font-size: 2rem;
+    }
+    header ul li a{
+        font-size: 1rem;
+    }
+    .container{
+        min-width: 760px;
+    }
+
+    .container .dentista-content > p{
+        padding: 0 4rem;
+    }
+    .dentista-content .content-itens{
+        position: relative;
+        top: 1.5rem;
+        flex-direction: column;
+    }
+    .dentista-content .content-itens .content-item{
+        max-height: 15rem;
+        margin: 4px 0;
+    }
+    .container-servicos{
+        min-width: 760px;
+        flex-direction: column;
+        position: relative;
+        top: 6rem;
+    }
+    .servicos-content{
+        flex-direction: column;
+    }
+    #servico-img img{
+        min-height: 26rem;
+        min-width: 36rem;
+    }
+    #servico-img ul{
+        min-height: 26rem;
+        min-width: 36rem;
+        margin-bottom: 3.5rem;
+    }
+    #especialidades{
+        min-width: 760px;
+    }
+    .container-itens ul{
+        max-width: 56rem;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .container-itens ul li{
+        margin: 1rem 20px;
+    }
+    #services-container{
+        position: relative;
+        min-width: 760px;
+    }
+    .servicos-container{
+        flex-direction: column-reverse;
+    }
+    #services-container .servicos-container #nosso-servico{
+        max-width: 580px;
+        margin: auto;
+    }
+    #services-container .servicos-container .horarios-servicos{
+        min-width: 580px;
+        margin: auto;
+        margin-bottom: 2.5rem;
+    }
+    #horarios-content {
+        min-width: 760px;
+        flex-direction: column;
+    }
+    #horarios-content .horario-item{
+        margin: 10px 0;
+        position: relative;
+        left: -2rem;
+
+    }
+    #horarios-content .horario-item ul{
+        min-width: 400px;
+        position: relative;
+    }
+    .containerFluid{
+        min-width: 14rem;
+        padding: 0 6rem;
+        position: relative;
+        left: 28px;
+    }
+
+    footer{
+        min-width: 760px;
+    }
+}
+
+
+.container{
+    height: 45rem;
+    position: relative;
+    top: -5rem;
+    margin-bottom: 14rem;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/dentista2.jpeg);
+}
+.container .dentista-content{
+    height: 45rem;
+    background-color: #0c6ac8bc;
+}
+.container .dentista-content h4{
+    color: #fff;
+    padding: 5rem 0 0.3rem;
+    font-size: 2.5rem;
+}
+.container .dentista-content > p{
+    font-size: 1.3rem;
+    color: #ffffffd8;
+}
+.content-itens{
+    position: relative;
+    top: 26rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-item {
+    width: 28rem;
+    height: 18rem;
+    padding: 20px;
+    flex-direction: column;
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    border: 3px solid #0082c7;
+    box-shadow: 0 0 0.8rem #00bfffc9;
+}
+.content-item i{
+    color: #0082c7;
+    font-size: 3rem;
+}
+.content-item span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.4rem 0;
+    color: #0082c7;
+    text-transform: uppercase;
+}
+.content-item p{
+    font-size: 1.05rem;
+    text-align: center;
+    color: #00008b;
+
+}
+.container-servicos h4{
+    color: #00bfff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+#services{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #606060;
+    margin: 0 0 5rem;
+}
+.container-servicos #services::after{
+    height: 3px;
+    width: 5rem;
+    margin: 0.5rem auto;
+    content: "";
+    display: block;
+    border-radius: 5px;
+    background-color: #0082c7;
+}
+.servicos-content{
+    margin-bottom: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicos-content #servico-img {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicos-content #servico-img img{
+    height: 300px;
+    width: 450px;
+    margin: 0 1rem 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    outline: 3px solid #0081c768;
+    transition: 0.4s ease;
+}
+.servicos-content #servico-img img:hover{
+    transform: scale(1.05);
+    outline: 3px solid #0082c7;
+    box-shadow: 0 0 3rem #49bfff;
+}
+.servicos-content #servico-img ul{
+    height: 300px;
+    width: 450px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0 1rem 1rem ;
+    border-top: 3px solid #00008b;
+    background: linear-gradient(126deg, rgba(18,120,174,1) 39%, rgba(0,191,255,1) 100%);
+    }
+.servicos-content #servico-img ul span{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.servicos-content #servico-img ul p{
+    font-size: 1.0.5rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    color: #fff;
+}
+#especialidades{
+    position: relative;
+    margin: 6rem 0;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(126deg, rgba(1,43,126,1) 0%, rgba(0,108,222,1) 100%);
+}
+#especialidades .container-itens > span{
+    font-size: 1.4rem;
+    color: #fff;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #fff;
+}
+
+#especialidades .container-itens ul{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#especialidades .container-itens ul li{
+    height: 12rem;
+    width: 12rem;
+    padding: 40px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #00bfff;
+    margin-left: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem #00bfffc9;
+}
+#especialidades .container-itens ul li i{
+    font-size: 2.6rem;
+    color: #00bfff;
+}
+#especialidades .container-itens ul li span{
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+    color: #d8d8f9;
+}
+.servicos-container{
+    position: relative;
+    margin: 8rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#nosso-servico{
+    width: 54rem;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+#nosso-servico::-webkit-scrollbar{
+    display: none;
+}
+
+/* #nosso-servico:active .servicos-img{
+    animation: move 16s linear;
+}
+@keyframes move{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-112rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} */
+
+#nosso-servico .servicos-img{
+    width: 400px;
+    margin: 0  1rem;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nosso-servico .servicos-img img{
+    height: 300px;
+    width: 400px;
+    border-radius: 1rem;
+}
+h5{
+    font-size: 1.4rem;
+    color: #0082c7;
+    margin: 2rem 0 0.5rem;
+    text-transform: capitalize;
+}
+p{
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.horarios-servicos{
+    width: 25rem;
+    margin-left: 3rem;
+}
+.horarios-servicos h4{
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    color: #00bfff;
+    text-transform: capitalize;
+}
+.horarios-servicos h4::after{
+    height: 3px;
+    width: 5rem;
+    content: "";
+    display: block;
+    border-radius: 8px;
+    background-color: #0082c7;
+}
+.horarios-servicos ul li{
+    padding: 4.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #60606045;
+}
+.horarios-servicos ul li span{
+    font-size: 1.08;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.horarios-servicos ul li > p{
+    color: #606060;
+    font-weight: 400;
+}
+
+
+#horarios-content{
+    margin-right: 4rem;
+    margin-bottom: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.horario-item{
+    margin: 0 -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horario-item ul{
+    width: 30rem;
+    height: 15rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-left: -5.3rem;
+    border-radius: 0 0 1rem 0;
+    background-color: #d5d5d5;
+}
+.horario-item ul li{
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.horario-item ul li .seman{
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+.horario-item ul li .hora{
+    color: #606060;
+}
+.infor-hora span{
+    height: 4.5rem;
+    width: 15rem;
+    color: #fff;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-90deg);
+    border-radius: 0 1rem 0 0;
+    background: linear-gradient(126deg, rgba(1,43,126,1) 0%, rgba(0,108,222,1) 100%);
+}
+
+.horario-item i{
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    color: rgb(1,43,126);
+}
+.horario-item p{
+    font-size: 1.05rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+.containerFluid {
+    width: 45rem;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+  
+.containerFluid h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #0082c7;
+}
+  
+.containerFluid h2::after {
+    display: block;
+    content: "";
+    width: 5rem;
+    height: 3px;
+    border-radius: 8px;
+    background-color: #00008b;
+}
+  
+.accordion {
+    height: 4rem;
+    width: 100%;
+    padding: 0 6px;
+    border: 2px solid #00bfff;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+  
+.accordion .icon {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px 7px #1f5c9a;
+    border-radius: 50%;
+    float: left;
+    transition: all 0.6s ease-in;
+}
+  
+.accordion h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #1f5c9a;
+}
+  
+.active {
+    background-color: #00bfff;
+    color: #fff;
+}
+  
+.active .icon {
+    background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px -25px #fff;
+}
+  
+.panel {
+    padding: 0 15px;
+    border-left: 3px solid #0082c7;
+    margin-left: 25px;
+    font-size: 16px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease-in;
+}
+  
+
+/* Rodapé */
+
+
+footer{
+    background-color: #0c6ac8;
+    margin-top: 80px;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 3%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col {
+    width: 24%;
+    padding: 0 5px;
+}
+.footer-col h4{
+    width: 10rem;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffffffc3;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a,.footer-col a{
+    font-size: 18px;
+    margin: 14px 0;
+    text-transform: capitalize; /* Para que a primeira letra fique maiuscula :)*/
+    color: #fff;
+    font-weight: 300px;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover, .footer-col .central a:hover{
+    padding-left: 10px;
+}
+.central{
+    display: inline-block;
+}
+.footer-col .central i{
+    font-size: 20px;
+    color: #fff;
+}
+.footer-col .central strong{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.footer-col .medias-sociais{
+    margin-top: 10px;
+
+}
+.footer-col .medias-sociais a{
+    display: inline-flex;
+    height: 45px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    color: #cecdcd;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-sociais a:hover{
+    color: #0c6ac8;
+    background-color: #fff;
+}
+@media (max-width: 900px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 600px){
+    .footer-col{
+        max-width: 1400px;
+    }
+}
